@@ -1,10 +1,22 @@
 import React from 'react'
 import './styles.css'
 
-const Code = (props) => (
-  <pre className='Pre'>
-    <code className='Code'>{props.children}</code>
-  </pre>
-)
+class Code extends React.Component {
+  componentDidMount () {
+    if (window.Prism) {
+      window.Prism.highlightElement(this.code)
+    }
+  }
+
+  render () {
+    const language = this.props.language ? `language-${this.props.language}` : ''
+
+    return (
+      <pre className={'Pre ' + language} ref={(ref) => (this.code = ref)}>
+        <code className='Code'>{this.props.children}</code>
+      </pre>
+    )
+  }
+}
 
 export default Code

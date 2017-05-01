@@ -1,7 +1,6 @@
 import React from 'react'
 import Title from '../SimpleProps/Title'
 import UserIndex from './UserIndex'
-import Code from '../__internals/Code'
 
 const Page = (props) => (
   <div>
