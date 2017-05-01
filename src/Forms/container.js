@@ -13,11 +13,21 @@ class Search extends React.Component {
       return this.props.users
     }
 
-    return this.props.users.filter(this.isUserMatching)
+    return this.props.users
+      .filter(this.isUserMatching)
+      .sort(this.sortUsers)
   }
 
   isUserMatching = (user) => {
     return user.name.toLowerCase().indexOf(this.props.search.toLowerCase()) > -1
+  }
+
+  sortUsers = (a, b) => {
+    const { name: nameA } = a
+    const { name: nameB } = b
+    const { search } = this.props
+
+    return nameA.indexOf(search) > nameB.indexOf(search) ? 1 : -1
   }
 
   render () {
