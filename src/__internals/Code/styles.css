@@ -1,8 +1,11 @@
 .Pre {
   background-color: #EFEFEF;
-  padding: 1em;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  margin: 1em 0;
+  padding: 1em 2em;
+  margin: 1.5em 0;
+  width: 100vw;
+  position: relative;
+  left: -2em;
+  overflow: auto;
 }
 
 .Code {
@@ -16,8 +19,8 @@
  * @author Lea Verou
  */
 
-code[class*="language-"],
-pre[class*="language-"] {
+code[class*='language-'],
+pre[class*='language-'] {
   color: black;
   background: none;
   text-shadow: 0 1px white;
@@ -28,50 +31,29 @@ pre[class*="language-"] {
   word-break: normal;
   word-wrap: normal;
   line-height: 1.5;
-
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
   tab-size: 4;
-
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
   hyphens: none;
 }
 
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+pre[class*='language-']::-moz-selection, pre[class*='language-'] ::-moz-selection,
+code[class*='language-']::-moz-selection, code[class*='language-'] ::-moz-selection {
   text-shadow: none;
   background: #b3d4fc;
 }
 
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-code[class*="language-"]::selection, code[class*="language-"] ::selection {
+pre[class*='language-']::selection, pre[class*='language-'] ::selection,
+code[class*='language-']::selection, code[class*='language-'] ::selection {
   text-shadow: none;
   background: #b3d4fc;
 }
 
-@media print {
-  code[class*="language-"],
-  pre[class*="language-"] {
-    text-shadow: none;
-  }
-}
-
-/* Code blocks */
-pre[class*="language-"] {
-  padding: 1em;
-  margin: .5em 0;
-  overflow: auto;
-}
-
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
   background: #f5f2f0;
 }
 
 /* Inline code */
-:not(pre) > code[class*="language-"] {
+:not(pre) > code[class*='language-'] {
   padding: .1em;
   border-radius: .3em;
   white-space: normal;
