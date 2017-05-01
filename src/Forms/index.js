@@ -15,7 +15,7 @@ class Search extends React.Component {
     const params = getSearchParams(this.props.location.search)
 
     this.state = {
-      search: params.search
+      search: params.search || ''
     }
   }
 
