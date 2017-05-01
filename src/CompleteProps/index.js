@@ -1,6 +1,8 @@
 import React from 'react'
 import Title from '../SimpleProps/Title'
 import Code from '../__internals/Code'
+import SectionTitle from '../__internals/SectionTitle'
+import Example from '../__internals/Example'
 import UserIndex from './UserIndex'
 
 const Page = (props) => (
@@ -24,9 +26,11 @@ const Page = (props) => (
       Be sure to have a look at the code in the files from this folder!
     </p>
 
-    <UserIndex />
+    <Example live>
+      <UserIndex />
+    </Example>
 
-    <h2>Props validation</h2>
+    <SectionTitle text='Props validation' />
 
     <p>
       In components <code>User</code> and <code>UserList</code>, you might see
