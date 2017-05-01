@@ -35,3 +35,11 @@ h2 {
   font-size: 120%;
   font-variant: small-caps;
 }
+
+/* Inline code */
+:not(pre) > code {
+  background-color: #EFEFEF;
+  padding: 0 0.25em;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  white-space: normal;
+}
