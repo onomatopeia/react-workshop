@@ -22,14 +22,16 @@ class Search extends React.Component {
   componentDidUpdate (prevProps) {
     const prevParams = getSearchParams(prevProps.location.search)
     const params = getSearchParams(this.props.location.search)
+
     if (prevParams.search !== params.search) {
-      // console.log(prevParams.search, params.search)
-      // this.updateSearch(params.search)
+      this.setState({ search: params.search })
     }
   }
 
   updateSearch = (value) => {
-    this.context.router.history.push('?search=' + encodeURIComponent(value))
+    const updateValue = value ? '?search=' + encodeURIComponent(value) : '?'
+
+    this.context.router.history.push(this, updateValue)
   }
 
   handleChange = (event) => {
@@ -38,6 +40,7 @@ class Search extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault()
+
     this.updateSearch(this.state.search)
   }
 
