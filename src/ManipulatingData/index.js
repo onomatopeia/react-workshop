@@ -1,12 +1,12 @@
 import React from 'react'
-import Title from '../SimpleProps/Title'
 import Example from '../__internals/Example'
+import PageTitle from '../__internals/PageTitle'
 import SectionTitle from '../__internals/SectionTitle'
 import Search from './Search'
 
 const Page = (props) => (
   <div>
-    <Title text='Manipulating Data' />
+    <PageTitle text='Manipulating Data' />
 
     <p>
       In the following example, we use our <code>UserList</code> component from

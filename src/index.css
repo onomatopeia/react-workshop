@@ -1,30 +1,25 @@
 html {
   box-sizing: border-box;
-  background-color: #EFEFEF;
-  height: 100%;
 }
 
-* {
+*, ::before, ::after {
   box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
 }
 
 body {
   margin: 0;
-  height: 100%;
   font: 125% / 1.4 sans-serif;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 ul {
-  padding: 0 0 0 1em;
-}
-
-#root {
-  border-left: 10px solid #2980b9;
-  display: flex;
-  flex-direction: column;
-  flex: 1 0 auto;
+  padding-left: 1em;
 }
 
 h1 {
@@ -35,7 +30,6 @@ h2 {
   margin-top: 0;
 }
 
-/* Inline code */
 :not(pre) > code {
   background-color: #EFEFEF;
   padding: 0 0.25em;

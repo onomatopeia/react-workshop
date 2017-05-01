@@ -1,5 +1,5 @@
 import React from 'react'
-import Title from '../SimpleProps/Title'
+import PageTitle from '../__internals/PageTitle'
 import Code from '../__internals/Code'
 import SectionTitle from '../__internals/SectionTitle'
 import Example from '../__internals/Example'
@@ -7,7 +7,7 @@ import UserIndex from './UserIndex'
 
 const Page = (props) => (
   <div>
-    <Title text='Getting deeper into props' />
+    <PageTitle text='Getting deeper into props' />
 
     <p>
       More often that not, a component will render sub-components which may

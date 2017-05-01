@@ -1,5 +1,5 @@
 import React from 'react'
-import Title from '../SimpleProps/Title'
+import PageTitle from '../__internals/PageTitle'
 import SectionTitle from '../__internals/SectionTitle'
 import Code from '../__internals/Code'
 import Example from '../__internals/Example'
@@ -12,7 +12,7 @@ const ViewportWidthDisplay = ViewportWidth((props) => (
 
 const Page = (props) => (
   <div onClick={props.onClick}>
-    <Title text='Higher-order components' />
+    <PageTitle text='Higher-order components' />
 
     <p>
       Higher-order components (sometimes higher-order functions) are functions

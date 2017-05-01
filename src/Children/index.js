@@ -1,10 +1,10 @@
 import React from 'react'
-import Title from '../SimpleProps/Title'
+import PageTitle from '../__internals/PageTitle'
 import Code from '../__internals/Code'
 
 const Page = (props) => (
   <div>
-    <Title text='React Children' />
+    <PageTitle text='React Children' />
 
     <p>
       Generally speaking, you are free to name your props the way you want.

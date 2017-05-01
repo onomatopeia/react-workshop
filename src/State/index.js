@@ -1,6 +1,6 @@
 import React from 'react'
 import Timer from './Timer'
-import Title from '../SimpleProps/Title'
+import PageTitle from '../__internals/PageTitle'
 import SectionTitle from '../__internals/SectionTitle'
 import Code from '../__internals/Code'
 import Example from '../__internals/Example'
@@ -9,7 +9,7 @@ import MousePosition from './MousePosition'
 
 const Page = () => (
   <div>
-    <Title text='Stateful components' />
+    <PageTitle text='Stateful components' />
 
     <p>
       React components can have an internal state which is useful to maintain
