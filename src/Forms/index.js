@@ -31,7 +31,7 @@ class Search extends React.Component {
   updateSearch = (value) => {
     const updateValue = value ? '?search=' + encodeURIComponent(value) : '?'
 
-    this.context.router.history.push(this, updateValue)
+    this.context.router.history.push(updateValue)
   }
 
   handleChange = (event) => {
