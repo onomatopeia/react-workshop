@@ -1,8 +1,11 @@
 .Page {
-  max-width: 800px;
   width: 100%;
-  margin: 0 auto;
-  padding: 1em;
+  padding: 2em;
   background-color: white;
-  height: 100%;
+  flex: 1 0 auto;
+}
+
+.Container {
+  max-width: 700px;
+  max-width: 70ch;
 }

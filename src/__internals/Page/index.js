@@ -3,7 +3,9 @@ import './styles.css'
 
 const Page = (props) => (
   <div className='Page'>
-    {props.children}
+    <div className='Container'>
+      {props.children}
+    </div>
   </div>
 )
 

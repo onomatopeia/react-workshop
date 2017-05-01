@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const User = (props) => (
-  <p>
+  <span>
     {props.preferredName || props.name}: <a href={`mailto:${props.email}`}>{props.email}</a>
-  </p>
+  </span>
 )
 
 // https://facebook.github.io/react/docs/typechecking-with-proptypes.html

@@ -1,16 +1,24 @@
 import React from 'react'
-import UserList from './UserList'
+import Title from '../SimpleProps/Title'
+import UserIndex from './UserIndex'
+import Code from '../__internals/Code'
 
-const users = [
-  { name: 'Michael', preferredName: 'Mike', email: 'mike@mikesmart.co.uk' },
-  { name: 'Hugo', email: 'hugo.giraudel@gmail.com' }
-]
-
-const UserIndex = () => (
+const Page = (props) => (
   <div>
-    <h2>Users:</h2>
-    <UserList users={users} />
+    <Title text='Component with complex props' />
+
+    <p>
+      More often that not, a component will render sub-components which may
+      themselves render sub-components. Here, we render
+      a <code>UserIndex</code> component which renders a title and
+      a <code>UserList</code> component, which renders
+      some <code>User</code> components.
+    </p>
+
+    <p>Be sure to have a look at the code in the files from this folder!</p>
+
+    <UserIndex />
   </div>
 )
 
-export default UserIndex
+export default Page

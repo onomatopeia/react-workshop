@@ -1,13 +1,17 @@
 .Navigation {
   border-bottom: 1px solid silver;
-  padding-bottom: 1em;
-  margin: 0 -0.5ch;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 350px;
+  background-color: white;
+  padding: 2em 1em;
+  border-left: 10px solid #e74c3c;
 }
 
 .Link {
-  display: inline-block;
-  text-decoration: none;
-  color: deepskyblue;
-  border-bottom: 1px solid;
-  margin: 0 0.5ch;
+  display: block;
+  color: #e74c3c;
+  padding: 0.25em 0;
 }
