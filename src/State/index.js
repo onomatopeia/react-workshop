@@ -93,7 +93,7 @@ const Page = () => (
       <MousePosition />
     </Example>
 
-    <SectionTitle text='Exercise D - Integrate a 3rd party' />
+    <SectionTitle text='Exercise D - Integrate a 3rd party (hard)' />
 
     <p>
       [Hard] Find a simple third-party library and initialise it inside your
