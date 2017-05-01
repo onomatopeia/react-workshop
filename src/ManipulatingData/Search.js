@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import List from './container'
+import UserListContainer from './UserListContainer'
 import users from './data'
 import getSearchParams from './getSearchParams'
+import './styles.css'
 
 class Search extends React.Component {
   static contextTypes = {
@@ -50,18 +51,27 @@ class Search extends React.Component {
   render () {
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
-          <label htmlFor='search'>Search</label>
+        <form onSubmit={this.handleSubmit} className='Form'>
+          <label htmlFor='search' className='Label'>Search</label>
+
           <input
             type='search'
             name='search'
             id='search'
             onChange={this.handleChange}
             value={this.state.search}
+            className='Input'
           />
-          <button type='submit'>Search</button>
+
+          <button type='submit' className='Button'>
+            Search
+          </button>
         </form>
-        <List users={users} search={this.state.search} />
+
+        <UserListContainer
+          users={users}
+          search={this.state.search}
+        />
       </div>
     )
   }

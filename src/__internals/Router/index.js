@@ -6,7 +6,7 @@ import Props from '../../SimpleProps'
 import MoreProps from '../../CompleteProps'
 import State from '../../State'
 import HigherOrder from '../../HigherOrder'
-import Forms from '../../Forms'
+import ManipulatingData from '../../ManipulatingData'
 import Children from '../../Children'
 import './styles.css'
 
@@ -23,7 +23,7 @@ class Navigation extends React.Component {
             <li><Link to='/Children' className='Link'>React Children</Link></li>
             <li><Link to='/State' className='Link'>Stateful components</Link></li>
             <li><Link to='/HigherOrder' className='Link'>Higher-order functions</Link></li>
-            <li><Link to='/Forms' className='Link'>Forms</Link></li>
+            <li><Link to='/ManipulatingData' className='Link'>Manipulating Data</Link></li>
           </ol>
         </div>
 
@@ -34,7 +34,7 @@ class Navigation extends React.Component {
         <Route path='/Children' component={Children} />
         <Route path='/State' component={State} />
         <Route path='/HigherOrder' component={HigherOrder} />
-        <Route path='/Forms' component={Forms} />
+        <Route path='/ManipulatingData' component={ManipulatingData} />
       </div>
     )
   }

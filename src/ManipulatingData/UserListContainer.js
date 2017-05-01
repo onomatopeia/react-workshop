@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import UserList from '../CompleteProps/UserList'
 
-class Search extends React.Component {
+class UserListContainer extends React.Component {
   static propTypes = {
     users: PropTypes.arrayOf(PropTypes.object).isRequired,
     search: PropTypes.string
@@ -37,4 +37,4 @@ class Search extends React.Component {
   }
 }
 
-export default Search
+export default UserListContainer
