@@ -1,14 +1,16 @@
 import React from 'react'
 
-const ViewportWidthProvider = (Component) => {
+const ViewportWidthProvider = (WrappedComponent) => {
   class ViewportWidth extends React.Component {
     render () {
       return (
         // Replace `viewportWidth` prop value with the actual viewportWidth
-        <Component {...this.props} viewportWidth={undefined} />
+        <WrappedComponent {...this.props} viewportWidth={undefined} />
       )
     }
   }
+
+  return ViewportWidth
 }
 
 

@@ -1,17 +1,17 @@
 import React from 'react'
 
-const Trackable = (Component) => {
+const Trackable = (WrappedComponent) => {
   class TrackableComponent extends React.Component {
     componentDidMount () {
-      console.log(`Component ${Component.name} mounted.`)
+      console.log(`Component ${WrappedComponent.name} mounted.`)
     }
 
     componentWillUnmount () {
-      console.log(`Component ${Component.name} will unmount.`)
+      console.log(`Component ${WrappedComponent.name} will unmount.`)
     }
 
     handleClick = (event) => {
-      console.log(`Component ${Component.name} clicked.`)
+      console.log(`Component ${WrappedComponent.name} clicked.`)
 
       if (typeof this.props.onClick === 'function') {
         this.props.onClick(event)
@@ -20,7 +20,7 @@ const Trackable = (Component) => {
 
     render () {
       return (
-        <Component
+        <WrappedComponent
           {...this.props}
           onClick={this.handleClick}
         />
