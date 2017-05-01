@@ -24,7 +24,7 @@ class Search extends React.Component {
     const params = getSearchParams(this.props.location.search)
 
     if (prevParams.search !== params.search) {
-      this.setState({ search: params.search })
+      this.setState({ search: params.search || '' })
     }
   }
 
@@ -40,8 +40,11 @@ class Search extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault()
+    const params = getSearchParams(this.props.location.search)
 
-    this.updateSearch(this.state.search)
+    if (params.search !== this.state.search) {
+      this.updateSearch(this.state.search)
+    }
   }
 
   render () {
