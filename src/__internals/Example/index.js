@@ -3,7 +3,7 @@ import './styles.css'
 
 const Example = (props) => (
   <div className='Example'>
-    {props.live && <span className='Live'>Live Coding Area</span>}
+    {props.live && <span className='Live'>Live Rendering Area</span>}
     {props.children}
   </div>
 )
