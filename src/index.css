@@ -1,0 +1,23 @@
+html {
+  box-sizing: border-box;
+  background-color: #EFEFEF;
+  height: 100%;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  font: 120% / 1.4 sans-serif;
+}
+
+ul {
+  padding: 0 0 0 1em;
+}
+
+#root {
+  height: 100%;
+}
