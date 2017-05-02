@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from './Title'
-import Code from '../__internals/Code'
+import Code from '../../components/Code'
 
 const Page = (props) => (
   <div>

@@ -1,7 +1,7 @@
 import React from 'react'
-import Code from '../__internals/Code'
-import PageTitle from '../__internals/PageTitle'
-import SectionTitle from '../__internals/SectionTitle'
+import Code from '../../components/Code'
+import PageTitle from '../../components/PageTitle'
+import SectionTitle from '../../components/SectionTitle'
 
 const Page = (props) => (
   <div>

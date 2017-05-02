@@ -1,8 +1,8 @@
 import React from 'react'
-import PageTitle from '../__internals/PageTitle'
-import SectionTitle from '../__internals/SectionTitle'
-import Code from '../__internals/Code'
-import Example from '../__internals/Example'
+import PageTitle from '../../components/PageTitle'
+import SectionTitle from '../../components/SectionTitle'
+import Code from '../../components/Code'
+import Example from '../../components/Example'
 import Trackable from './Trackable'
 import ViewportWidth from './ViewportWidth'
 

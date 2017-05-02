@@ -1,8 +1,8 @@
 import React from 'react'
-import PageTitle from '../__internals/PageTitle'
-import Code from '../__internals/Code'
-import SectionTitle from '../__internals/SectionTitle'
-import Example from '../__internals/Example'
+import PageTitle from '../../components/PageTitle'
+import Code from '../../components/Code'
+import SectionTitle from '../../components/SectionTitle'
+import Example from '../../components/Example'
 import UserIndex from './UserIndex'
 
 const Page = (props) => (

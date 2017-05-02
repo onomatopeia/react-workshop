@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { HashRouter } from 'react-router-dom'
-import Main from './__internals/Main'
-import Router from './__internals/Router'
-import Page from './__internals/Page'
+import Main from './components/Main'
+import Router from './components/Router'
+import Page from './components/Page'
 import './index.css'
 
 ReactDOM.render(

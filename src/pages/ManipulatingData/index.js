@@ -1,7 +1,7 @@
 import React from 'react'
-import Example from '../__internals/Example'
-import PageTitle from '../__internals/PageTitle'
-import SectionTitle from '../__internals/SectionTitle'
+import Example from '../../components/Example'
+import PageTitle from '../../components/PageTitle'
+import SectionTitle from '../../components/SectionTitle'
 import Search from './Search'
 
 const Page = (props) => (

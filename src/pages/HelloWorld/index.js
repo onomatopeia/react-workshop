@@ -1,6 +1,6 @@
 import React from 'react'
 import HelloWorld from './HelloWorld'
-import Code from '../__internals/Code'
+import Code from '../../components/Code'
 
 const Page = (props) => (
   <div>
