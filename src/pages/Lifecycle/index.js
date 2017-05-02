@@ -33,9 +33,9 @@ const Page = (props) => (
 
     <p>
       The code snippets in this small website (rendered with
-      the <code>Code</code> component in <code>__internals</code> folder) are
-      highlighted with Prism.js. When a code block mounts, its own component
-      uses the Prism API to highlight it.
+      the <code>components/Code</code> component) are highlighted with Prism.js.
+      When a code block mounts, its own component uses the Prism API to
+      highlight it.
     </p>
 
     <Code language='jsx'>{`class Code extends React.Component {
