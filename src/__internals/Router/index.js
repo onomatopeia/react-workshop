@@ -5,6 +5,7 @@ import HelloWorld from '../../HelloWorld'
 import Props from '../../SimpleProps'
 import MoreProps from '../../CompleteProps'
 import State from '../../State'
+import Lifecycle from '../../Lifecycle'
 import HigherOrder from '../../HigherOrder'
 import ManipulatingData from '../../ManipulatingData'
 import Children from '../../Children'
@@ -21,6 +22,7 @@ class Navigation extends React.Component {
             <li><Link to='/SimpleProps' className='Link'>Props</Link></li>
             <li><Link to='/CompleteProps' className='Link'>More props</Link></li>
             <li><Link to='/Children' className='Link'>React Children</Link></li>
+            <li><Link to='/Lifecycle' className='Link'>Lifecycle</Link></li>
             <li><Link to='/State' className='Link'>Stateful components</Link></li>
             <li><Link to='/HigherOrder' className='Link'>Higher-order functions</Link></li>
             <li><Link to='/ManipulatingData' className='Link'>Manipulating Data</Link></li>
@@ -33,6 +35,7 @@ class Navigation extends React.Component {
         <Route path='/CompleteProps' component={MoreProps} />
         <Route path='/Children' component={Children} />
         <Route path='/State' component={State} />
+        <Route path='/Lifecycle' component={Lifecycle} />
         <Route path='/HigherOrder' component={HigherOrder} />
         <Route path='/ManipulatingData' component={ManipulatingData} />
       </div>
