@@ -19,7 +19,16 @@ class UserListContainer extends React.Component {
   }
 
   isUserMatching = (user) => {
-    return user.name.toLowerCase().indexOf(this.props.search.toLowerCase()) > -1
+    return (
+      this.isMatchingSearch(user.preferredName) ||
+      this.isMatchingSearch(user.name)
+    )
+  }
+
+  isMatchingSearch = (value = '') => {
+    return value
+      .toLowerCase()
+      .indexOf(this.props.search.toLowerCase()) > -1
   }
 
   sortUsers = (a, b) => {
