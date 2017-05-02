@@ -13,8 +13,8 @@ const Page = () => (
 
     <p>
       React components can have an internal state which is useful to maintain
-      component-specific information during a part of the entirety of
-      their <a href='https://facebook.github.io/react/docs/state-and-lifecycle.html' target='_blank'>lifecycle</a>.
+      component-specific information during a part of the entirety of their
+      lifecycle.
     </p>
 
     <p>
