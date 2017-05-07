@@ -12,8 +12,10 @@ class Code extends React.Component {
     const language = this.props.language ? `language-${this.props.language}` : ''
 
     return (
-      <pre className={'Pre ' + language} ref={(ref) => (this.code = ref)}>
-        <code className='Code'>{this.props.children}</code>
+      <pre className={'Pre ' + language}>
+        <code className='Code' ref={(ref) => (this.code = ref)}>
+          {this.props.children}
+        </code>
       </pre>
     )
   }

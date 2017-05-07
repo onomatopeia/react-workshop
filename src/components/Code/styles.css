@@ -16,6 +16,11 @@
   hyphens: none;
 }
 
+.Code {
+  max-width: 700px;
+  max-width: 70ch;
+}
+
 .token.comment,
 .token.prolog,
 .token.doctype,
