@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'Calibre';
+  src: local('Calibre'),
+       url('../public/Calibre-Regular.woff2') format('woff2'),
+       url('../public/Calibre-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: local('Calibre'),
+       url('../public/Calibre-Semibold.woff2') format('woff2'),
+       url('../public/Calibre-Semibold.woff') format('woff');
+  font-weight: bold;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -6,16 +21,18 @@ html {
   box-sizing: inherit;
 }
 
-html, body {
+html, body, #root {
   height: 100%;
 }
 
 body {
   margin: 0;
-  font: 125% / 1.4 sans-serif;
+  color: #2c3e50;
+  font: 150% / 1.4 'Calibre', sans-serif;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  background-color: rgb(249, 249, 249);
 }
 
 ul {
@@ -23,7 +40,7 @@ ul {
 }
 
 h1 {
-  border-bottom: 1px solid #d35400;
+  border-bottom: 1px solid rgb(59, 208, 214);
 }
 
 h2 {
@@ -35,4 +52,5 @@ h2 {
   padding: 0 0.25em;
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   white-space: normal;
+  font-size: 80%;
 }

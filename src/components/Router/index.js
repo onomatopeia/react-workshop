@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, Route } from 'react-router-dom'
+import Logo from '../../components/Logo'
 import Home from '../../pages/Home'
 import HelloWorld from '../../pages/HelloWorld'
 import Props from '../../pages/SimpleProps'
@@ -8,6 +9,7 @@ import State from '../../pages/State'
 import Lifecycle from '../../pages/Lifecycle'
 import HigherOrder from '../../pages/HigherOrder'
 import ManipulatingData from '../../pages/ManipulatingData'
+import About from '../../pages/About'
 import Children from '../../pages/Children'
 import './styles.css'
 
@@ -15,8 +17,9 @@ class Navigation extends React.Component {
   render() {
     return (
       <div>
-        <div className='Navigation'>
-          <ol>
+        <nav className='Navigation'>
+          <Logo className='Logo' />
+          <ol className='NavigationList'>
             <li><Link to='/' className='Link'>Home</Link></li>
             <li><Link to='/HelloWorld' className='Link'>Hello World</Link></li>
             <li><Link to='/SimpleProps' className='Link'>Props</Link></li>
@@ -26,8 +29,9 @@ class Navigation extends React.Component {
             <li><Link to='/State' className='Link'>Stateful components</Link></li>
             <li><Link to='/HigherOrder' className='Link'>Higher-order functions</Link></li>
             <li><Link to='/ManipulatingData' className='Link'>Manipulating Data</Link></li>
+            <li><Link to='/About' className='Link'>About us</Link></li>
           </ol>
-        </div>
+        </nav>
 
         <Route exact path='/' component={Home} />
         <Route path='/HelloWorld' component={HelloWorld} />
@@ -38,6 +42,7 @@ class Navigation extends React.Component {
         <Route path='/Lifecycle' component={Lifecycle} />
         <Route path='/HigherOrder' component={HigherOrder} />
         <Route path='/ManipulatingData' component={ManipulatingData} />
+        <Route path='/About' component={About} />
       </div>
     )
   }
