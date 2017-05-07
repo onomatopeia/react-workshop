@@ -1,6 +1,8 @@
 import React from 'react'
 import Title from './Title'
 import Code from '../../components/Code'
+import SectionTitle from '../../components/SectionTitle'
+import Example from '../../components/Example'
 
 const Page = (props) => (
   <div>
@@ -35,6 +37,17 @@ export default Title`}</Code>
     </p>
 
     <Code language='jsx'>{`<Title text='Props' />`}</Code>
+
+    <SectionTitle text='Exercise - Change title content' />
+
+    <p>
+      Update the following <code>Title</code> component to display the content
+      of your choice.
+    </p>
+
+    <Example live>
+      <Title text='Update me, I’m famous' />
+    </Example>
   </div>
 )
 

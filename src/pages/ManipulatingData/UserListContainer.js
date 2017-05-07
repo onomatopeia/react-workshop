@@ -19,10 +19,7 @@ class UserListContainer extends React.Component {
   }
 
   isUserMatching = (user) => {
-    return (
-      this.isMatchingSearch(user.preferredName) ||
-      this.isMatchingSearch(user.name)
-    )
+    return this.isMatchingSearch(user.name)
   }
 
   isMatchingSearch = (value = '') => {

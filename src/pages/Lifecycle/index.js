@@ -2,6 +2,8 @@ import React from 'react'
 import Code from '../../components/Code'
 import PageTitle from '../../components/PageTitle'
 import SectionTitle from '../../components/SectionTitle'
+import Example from '../../components/Example'
+import Logger from './Logger'
 
 const Page = (props) => (
   <div>
@@ -47,8 +49,10 @@ const Page = (props) => (
     const language = this.props.language ? \`language-\${this.props.language}\` : ''
 
     return (
-      <pre className={'Pre ' + language} ref={(ref) => (this.code = ref)}>
-        <code className='Code'>{this.props.children}</code>
+      <pre className={'Pre ' + language}>
+        <code className='Code' ref={(ref) => (this.code = ref)}>
+          {this.props.children}
+        </code>
       </pre>
     )
   }
@@ -65,6 +69,17 @@ const Page = (props) => (
     <p>
       Feel free to have a look at <a href='https://facebook.github.io/react/docs/refs-and-the-dom.html' target='_blank'>refs in the React docs</a> to learn more.
     </p>
+
+    <SectionTitle text='Exercise - Log when mounted' />
+
+    <p>
+      Update the following component (<code>Logger.js</code>) to log something
+      in the browser console when it has been mounted.
+    </p>
+
+    <Example live>
+      <Logger />
+    </Example>
   </div>
 )
 

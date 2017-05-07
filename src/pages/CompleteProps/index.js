@@ -52,6 +52,29 @@ User.propTypes = {
       Of course this is not mandatory and tends more and more to be replaced by
       something like <a href='https://flow.org/' target='_blank'>Flow</a> or <a href='http://www.typescriptlang.org/' target='_blank'>TypeScript</a>.
     </p>
+
+    <SectionTitle text='Exercise A - Add yourself to the user list' />
+
+    <p>
+      Add another entry to the following user list with your name and email (as
+      well as your nickname if you use one).
+    </p>
+
+    <Example live>
+      <UserIndex />
+    </Example>
+
+    <SectionTitle text='Exercise B - Add another prop to users' />
+
+    <p>
+      Try adding an extra information to users (such as a nationality, or an
+      age) and render it the way you want. Pro tip: remember to add some prop
+      types validation!
+    </p>
+
+    <Example live>
+      <UserIndex />
+    </Example>
   </div>
 )
 

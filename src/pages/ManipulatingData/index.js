@@ -34,6 +34,19 @@ const Page = (props) => (
       and sorting the users, while the component (<code>CompleteProps/UserList.js</code>)
       deals with rendering the list.
     </p>
+
+
+    <SectionTitle text='Exercise A - Filter on preferred name' />
+
+    <p>
+      Right now, the form only filters on actual name. But what if we wanted to
+      also look for preferred name (for users who have one)? Tweak the data flow
+      so it can filter on both name and preferred name.
+    </p>
+
+    <Example live>
+      <Search {...props} />
+    </Example>
   </div>
 )
 

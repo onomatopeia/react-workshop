@@ -1,6 +1,9 @@
 import React from 'react'
 import PageTitle from '../../components/PageTitle'
+import SectionTitle from '../../components/SectionTitle'
 import Code from '../../components/Code'
+import Example from '../../components/Example'
+import Title from './Title'
 
 const Page = (props) => (
   <div>
@@ -35,6 +38,23 @@ const Page = (props) => (
     </p>
 
     <Code language='jsx'>{`const Title = (props) => <h1>{props.children}</h1>`}</Code>
+
+    <p>
+      Remember that <code>children</code> does not only content text but also
+      HTML elements and React components.
+    </p>
+
+    <SectionTitle text='Exercise - Add a link to the title' />
+
+    <p>
+      Add a link to the page of your choice to the
+      following <code>Title</code> component without updating the component
+      itself, just by using <code>children</code>.
+    </p>
+
+    <Example live>
+      <Title>Make me a link!</Title>
+    </Example>
   </div>
 )
 
