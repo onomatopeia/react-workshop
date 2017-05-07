@@ -11,6 +11,7 @@ import HigherOrder from '../../pages/HigherOrder'
 import ManipulatingData from '../../pages/ManipulatingData'
 import About from '../../pages/About'
 import Children from '../../pages/Children'
+import Events from '../../pages/Events'
 import './styles.css'
 
 class Navigation extends React.Component {
@@ -25,6 +26,7 @@ class Navigation extends React.Component {
             <li><Link to='/SimpleProps' className='Link'>Props</Link></li>
             <li><Link to='/CompleteProps' className='Link'>More props</Link></li>
             <li><Link to='/Children' className='Link'>React Children</Link></li>
+            <li><Link to='/Events' className='Link'>Events</Link></li>
             <li><Link to='/Lifecycle' className='Link'>Lifecycle</Link></li>
             <li><Link to='/State' className='Link'>Stateful components</Link></li>
             <li><Link to='/HigherOrder' className='Link'>Higher-order functions</Link></li>
@@ -38,6 +40,7 @@ class Navigation extends React.Component {
         <Route path='/SimpleProps' component={Props} />
         <Route path='/CompleteProps' component={MoreProps} />
         <Route path='/Children' component={Children} />
+        <Route path='/Events' component={Events} />
         <Route path='/State' component={State} />
         <Route path='/Lifecycle' component={Lifecycle} />
         <Route path='/HigherOrder' component={HigherOrder} />
