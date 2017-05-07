@@ -12,6 +12,7 @@ import ManipulatingData from '../../pages/ManipulatingData'
 import About from '../../pages/About'
 import Children from '../../pages/Children'
 import Events from '../../pages/Events'
+import Styling from '../../pages/Styling'
 import './styles.css'
 
 class Navigation extends React.Component {
@@ -31,6 +32,7 @@ class Navigation extends React.Component {
             <li><Link to='/State' className='Link'>Stateful components</Link></li>
             <li><Link to='/HigherOrder' className='Link'>Higher-order functions</Link></li>
             <li><Link to='/ManipulatingData' className='Link'>Manipulating Data</Link></li>
+            <li><Link to='/Styling' className='Link'>Styling</Link></li>
             <li><Link to='/About' className='Link'>About us</Link></li>
           </ol>
         </nav>
@@ -45,6 +47,7 @@ class Navigation extends React.Component {
         <Route path='/Lifecycle' component={Lifecycle} />
         <Route path='/HigherOrder' component={HigherOrder} />
         <Route path='/ManipulatingData' component={ManipulatingData} />
+        <Route path='/Styling' component={Styling} />
         <Route path='/About' component={About} />
       </div>
     )

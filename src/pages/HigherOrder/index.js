@@ -51,6 +51,10 @@ const Page = (props) => (
     <Example live>
       <ViewportWidthDisplay />
     </Example>
+
+    <p>
+      When you’re done, make sure it reacts to viewport width’ changes as well!
+    </p>
   </div>
 )
 
