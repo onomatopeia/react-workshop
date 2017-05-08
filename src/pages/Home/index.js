@@ -8,9 +8,15 @@ export default () => (
     <PageTitle text='React is undefined' />
 
     <p>
-      Welcome to this introduction to React! In the next few hours, we’ll see
-      what is React, why would we use it over some over technologies, and how to
-      get started with writing React components.
+      Welcome to this introduction to <a href='https://facebook.github.io/react/' target='_blank'>
+      React</a>! In the next few hours, we’ll see what is React, why would we
+      use it over some over technologies, and how to get started with writing
+      React components.
+    </p>
+
+    <p>
+      <strong>✋ If you have any question at any moment, please be sure to ask! We are
+      here to help.</strong>
     </p>
 
     <SectionTitle text='What is React?' />
@@ -68,8 +74,8 @@ export default () => (
     <p>
       Now when it comes to know *what* to render, React does a “reconciliation”.
       This is the process in which React compares two virtual DOM trees to
-      figure out what has changed and what needs to be refreshed. You can read
-      <a href='https://facebook.github.io/react/docs/reconciliation.html' target='_blank'>about the reconciliation process
+      figure out what has changed and what needs to be refreshed. You can
+      read <a href='https://facebook.github.io/react/docs/reconciliation.html' target='_blank'>about the reconciliation process
       </a> more in details in the official documentation.
     </p>
 
@@ -82,8 +88,11 @@ export default () => (
     </p>
 
     <p>
-      From there, we can get introduced to the <Link to='/SimpleProps'>concept of “props”</Link>.
-      We will go <Link to='/CompleteProps'>further with props</Link> until we are comfortable with them.
+      From there, we can get introduced to the <Link to='/SimpleProps'>concept
+      of “props”</Link>. We will go <Link to='/CompleteProps'>further with
+      props</Link> until we are comfortable with them. Components configured
+      with props being no different than functions configured with parameters,
+      we should be able to quickly move to the interesting bits!
     </p>
 
     <SectionTitle text='Lifecycle' />
@@ -100,7 +109,9 @@ export default () => (
     <p>
       On top of props, React components can have internal state, making
       them <Link to='/State'>“stateful components”</Link>. This is deeply
-      connected to their lifecycle.
+      connected to their lifecycle. This is also what makes it possible to
+      write dynamic applications maintaining (local and/or global) states. In
+      other words, this is where the fun begins!
     </p>
 
     <SectionTitle text='Higher Order Components' />
@@ -109,7 +120,8 @@ export default () => (
       A component based approach enables developer to create reusable blocks to
       build consistent and efficient user interfaces. When it comes to
       extracting logic, there is a concept
-      called <Link to='/HigherOrder'>higher-order components</Link>.
+      called <Link to='/HigherOrder'>higher-order components</Link>. We’ll see
+      how to write a higher-order function and how to use it. 
     </p>
 
     <SectionTitle text='Components & containers' />
@@ -120,6 +132,16 @@ export default () => (
       Containers are regular components dealing with the logic bits and the data
       transforming / sorting / filtering so the component underneath can focus
       on rendering the data and displaying it in a nice way.
+    </p>
+
+    <SectionTitle text='Styling' />
+
+    <p>
+      Styling in React apps can be done in many ways, from basic CSS in a
+      separate stylesheet to LESS/Sass and other preprocessors, up until CSS-in-JS
+      solutions! In this section we’ll experiment with of these JavaScript-powered
+      styling implementations and practice with authoring dynamic styles based
+      on components props.
     </p>
   </div>
 )
