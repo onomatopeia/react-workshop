@@ -8,6 +8,7 @@
   padding: 2em;
   border-left: 10px solid rgb(52, 183, 188);
   background-color: rgb(249, 249, 249);
+  overflow: auto;
 }
 
 .Link {
