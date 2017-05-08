@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import PageTitle from '../../components/PageTitle'
+import SectionTitle from '../../components/SectionTitle'
 
 export default () => (
   <div>
-    <h1>React is undefined</h1>
+    <PageTitle text='React is undefined' />
 
     <p>
       Welcome to this introduction to React! In the next few hours, we’ll see
@@ -11,25 +13,67 @@ export default () => (
       get started with writing React components.
     </p>
 
-    <h2>What is React?</h2>
+    <SectionTitle text='What is React?' />
 
     <p>
-      TBA (not framework).
+      React is a JavaScript library for building user interfaces. It differs
+      from a framework in the way that it does not necessarily dictates ways to
+      do things. It also does not ship with everything necessary to build a
+      website or application. React essentially takes care of rendering the
+      interface.
     </p>
 
-    <h2>Why React?</h2>
+    <SectionTitle text='Why React?' />
 
     <p>
-      TBA (declarative, rich ecosystem).
+      There are many reasons why you would pick React over some other library or
+      framework. It could be the fact that it has a declarative syntax. There is
+      very little magic going on. What you see is what you get. This makes it
+      easy to pick up even for non-programmers; the learning curve is quite
+      shallow.
     </p>
-
-    <h2>How does it work?</h2>
 
     <p>
-      TBA (components, tree, diff…).
+      In React, almost everything is a component. This heavily componentized
+      approach makes it the perfect candidate to build complex layouts with a
+      lot of tiny reusable pieces. 
     </p>
 
-    <h2>Components</h2>
+    <p>
+      One of the benefits of embracing React is also its very rich ecosystem of 
+      components and plugins. Many companies have implemented React in their
+      tech stack and open-source their components for broader use.
+    </p>
+
+    <p>
+      Another great aspect of React is that it becomes quite universal. Because
+      of its efficiently tiny core, its main principle of reconcilation of
+      virtual DOM trees (see below) can be reused and implemented almost
+      anywhere. React exists on the web, but also on the native layer, in game
+      engines, in Sketch, in augmented reality…
+    </p>
+
+    <SectionTitle text='How does it work?' />
+
+    <p>
+      React abstracts the <abbr title='Document Object Model'>DOM</abbr> away.
+      It operates over a “virtual DOM”. Whenever one of your components gets
+      rendered, it doesn’t get written into the HTML document just yet. It gets
+      rendered inside a virtual representation of the DOM. Eventually, React
+      will convert that representation into actual HTML. While it might sound
+      unnecessarily complex, this is how React can offer such a simple and 
+      straight-forward declarative API.
+    </p>
+
+    <p>
+      Now when it comes to know *what* to render, React does a “reconciliation”.
+      This is the process in which React compares two virtual DOM trees to
+      figure out what has changed and what needs to be refreshed. You can read
+      <a href='https://facebook.github.io/react/docs/reconciliation.html' target='_blank'>about the reconciliation process
+      </a> more in details in the official documentation.
+    </p>
+
+    <SectionTitle text='Components' />
 
     <p>
       Writing React components do not have to be scary. We will start with
@@ -42,15 +86,24 @@ export default () => (
       We will go <Link to='/CompleteProps'>further with props</Link> until we are comfortable with them.
     </p>
 
-    <h2>State & lifecycle</h2>
+    <SectionTitle text='Lifecycle' />
 
     <p>
-      On top of props, React components can have internal state, making them
-      <Link to='/State'>“stateful components”</Link>. This is deeply connected
-      to their lifecycle.
+      Every React component has some sort of <Link to='/Lifecycle'>lifecycle</Link>.
+      It is possible to hook things onto these lifecycle events in order to
+      react to certain moments in time (when the component gets mounted,
+      unmounted, updated with new props…).
     </p>
 
-    <h2>Higher Order Components</h2>
+    <SectionTitle text='State' />
+
+    <p>
+      On top of props, React components can have internal state, making
+      them <Link to='/State'>“stateful components”</Link>. This is deeply
+      connected to their lifecycle.
+    </p>
+
+    <SectionTitle text='Higher Order Components' />
 
     <p>
       A component based approach enables developer to create reusable blocks to
@@ -59,7 +112,7 @@ export default () => (
       called <Link to='/HigherOrder'>higher-order components</Link>.
     </p>
 
-    <h2>Components & containers</h2>
+    <SectionTitle text='Components & containers' />
 
     <p>
       To avoid having components doing too many things, and to separate the
@@ -68,52 +121,5 @@ export default () => (
       transforming / sorting / filtering so the component underneath can focus
       on rendering the data and displaying it in a nice way.
     </p>
-
-    <h2>EVERYTHING BELOW IS TO CLEAN.</h2>
-
-    <h2>Use this knowledge to build something <em>(60 mins)</em></h2>
-
-    <ul>
-    <li>Simple index.html/CodePen, build a simple example, css block</li>
-    <li>CRA</li>
-    </ul>
-
-    <p>--- break ---</p>
-
-    <h2>Build systems</h2>
-
-    <ul>
-    <li>Webpack the basics</li>
-    <li>Webpack the complicated</li>
-    </ul>
-
-    <h2>Isomorphism</h2>
-
-    <ul>
-    <li>Server setup (ReactDOMServer, JSX in Node)</li>
-    <li>Caching?</li>
-    </ul>
-
-    <h2>Styling</h2>
-
-    <ul>
-    <li>CSS</li>
-    <li>Modules?</li>
-    <li>CSS in JS (Fela, styled-components)</li>
-    </ul>
-
-    <p>--- break ---</p>
-
-    <h2>Bonus content</h2>
-
-    <ul>
-    <li>Flux based state management</li>
-    <li>Router</li>
-    <li>Refs and third parties</li>
-    <li>Events (Keyboard Click Events)</li>
-    <li>Context - when to use it, and when really not to use it</li>
-    <li>Controlled components</li>
-    <li>Prop/State Hoisting (Data flow bottom to top)</li>
-    </ul>
   </div>
 )
