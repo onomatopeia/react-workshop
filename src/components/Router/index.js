@@ -57,10 +57,10 @@ class Navigation extends React.Component {
               <Link to='/Styling' className='Link'>Styling</Link>
             </li>
             <li className='NavigationItem'>
-              <Link to='/About' className='Link'>About us</Link>
+              <Link to='/StateManagement' className='Link'>State management</Link>
             </li>
             <li className='NavigationItem'>
-              <Link to='/StateManagement' className='Link'>State management</Link>
+              <Link to='/About' className='Link'>About us</Link>
             </li>
           </ol>
         </nav>
