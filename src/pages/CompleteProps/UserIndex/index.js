@@ -1,5 +1,5 @@
 import React from 'react'
-import UserList from './UserList'
+import UserList from '../UserList'
 
 const users = [
   { name: 'Michael', preferredName: 'Mike', email: 'mike@mikesmart.co.uk' },
