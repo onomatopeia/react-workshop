@@ -54,3 +54,18 @@ h2 {
   white-space: normal;
   font-size: 80%;
 }
+
+a {
+  color: rgb(52, 183, 188);
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+}
+
+a:hover,
+a:active {
+  background-color: rgb(59, 208, 214);
+  color: white;
+  border-radius: 0.25em;
+  padding: 0.25em;
+  margin: -0.25em;
+}
