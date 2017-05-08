@@ -22,18 +22,42 @@ class Navigation extends React.Component {
         <nav className='Navigation'>
           <Logo className='Logo' />
           <ol className='NavigationList'>
-            <li><Link to='/' className='Link'>Home</Link></li>
-            <li><Link to='/HelloWorld' className='Link'>Hello World</Link></li>
-            <li><Link to='/SimpleProps' className='Link'>Props</Link></li>
-            <li><Link to='/CompleteProps' className='Link'>More props</Link></li>
-            <li><Link to='/Children' className='Link'>React Children</Link></li>
-            <li><Link to='/Events' className='Link'>Events</Link></li>
-            <li><Link to='/Lifecycle' className='Link'>Lifecycle</Link></li>
-            <li><Link to='/State' className='Link'>Stateful components</Link></li>
-            <li><Link to='/HigherOrder' className='Link'>Higher-order functions</Link></li>
-            <li><Link to='/ManipulatingData' className='Link'>Manipulating Data</Link></li>
-            <li><Link to='/Styling' className='Link'>Styling</Link></li>
-            <li><Link to='/About' className='Link'>About us</Link></li>
+            <li className='NavigationItem'>
+              <Link to='/' className='Link'>Home</Link>
+            </li>
+            <li className='NavigationItem'>
+              <Link to='/HelloWorld' className='Link'>Hello World</Link>
+            </li>
+            <li className='NavigationItem'>
+              <Link to='/SimpleProps' className='Link'>Props</Link>
+            </li>
+            <li className='NavigationItem'>
+              <Link to='/CompleteProps' className='Link'>More props</Link>
+            </li>
+            <li className='NavigationItem'>
+              <Link to='/Children' className='Link'>React Children</Link>
+            </li>
+            <li className='NavigationItem'>
+              <Link to='/Events' className='Link'>Events</Link>
+            </li>
+            <li className='NavigationItem'>
+              <Link to='/Lifecycle' className='Link'>Lifecycle</Link>
+            </li>
+            <li className='NavigationItem'>
+              <Link to='/State' className='Link'>Stateful components</Link>
+            </li>
+            <li className='NavigationItem'>
+              <Link to='/HigherOrder' className='Link'>Higher-order functions</Link>
+            </li>
+            <li className='NavigationItem'>
+              <Link to='/ManipulatingData' className='Link'>Manipulating Data</Link>
+            </li>
+            <li className='NavigationItem'>
+              <Link to='/Styling' className='Link'>Styling</Link>
+            </li>
+            <li className='NavigationItem'>
+              <Link to='/About' className='Link'>About us</Link>
+            </li>
           </ol>
         </nav>
 
