@@ -9,6 +9,7 @@ import State from '../../pages/State'
 import Lifecycle from '../../pages/Lifecycle'
 import HigherOrder from '../../pages/HigherOrder'
 import ManipulatingData from '../../pages/ManipulatingData'
+import StateManagement from '../../pages/StateManagement'
 import About from '../../pages/About'
 import Children from '../../pages/Children'
 import Events from '../../pages/Events'
@@ -58,6 +59,9 @@ class Navigation extends React.Component {
             <li className='NavigationItem'>
               <Link to='/About' className='Link'>About us</Link>
             </li>
+            <li className='NavigationItem'>
+              <Link to='/StateManagement' className='Link'>State management</Link>
+            </li>
           </ol>
         </nav>
 
@@ -71,6 +75,7 @@ class Navigation extends React.Component {
         <Route path='/Lifecycle' component={Lifecycle} />
         <Route path='/HigherOrder' component={HigherOrder} />
         <Route path='/ManipulatingData' component={ManipulatingData} />
+        <Route path='/StateManagement' component={StateManagement} />
         <Route path='/Styling' component={Styling} />
         <Route path='/About' component={About} />
       </div>
