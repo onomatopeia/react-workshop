@@ -58,7 +58,7 @@ h2 {
 a {
   color: rgb(52, 183, 188);
   transition-property: background-color, color;
-  transition-duration: 250ms;
+  transition-duration: 0s;
 }
 
 a:hover,
@@ -68,4 +68,5 @@ a:active {
   border-radius: 0.25em;
   padding: 0.25em;
   margin: -0.25em;
+  transition-duration: 250ms;
 }
