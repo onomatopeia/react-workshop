@@ -1,7 +1,6 @@
 import React from 'react'
 import Code from '../../components/Code'
 import PageTitle from '../../components/PageTitle'
-import SectionTitle from '../../components/SectionTitle'
 import Example from '../../components/Example'
 import Button from './Button'
 import ButtonStyled from './ButtonStyled'
