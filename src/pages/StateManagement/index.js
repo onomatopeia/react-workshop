@@ -174,17 +174,56 @@ export default connect(mapStateToProps, mapDispatchToProps)(Counter)
       <CounterRedux />
     </Example>
 
-    <SectionTitle text='Exercise B - Increment/decrement by 10 option (medium)' />
+    <SectionTitle text='Exercise C - Add by-10 option (medium)' />
 
     <p>
       Update the Redux example to add two buttons to increment and decrement the
-      counter state by 10. Hint: a Redux action is a function returning the
-      plain JavaScript object of your choice.
+      counter state by 10. The current buttons should still work the same. Hint:
+      a Redux action is a function returning the plain JavaScript object of your
+      choice.
     </p>
 
     <Example live>
       <CounterRedux />
     </Example>
+
+    <SectionTitle text='Exercise D - Cap min and max values (medium)' />
+
+    <p>
+      Make it so the counter cannot be incremented higher than 25 and lower than
+      -25.
+    </p>
+
+    <Example live>
+      <CounterRedux />
+    </Example>
+
+    <SectionTitle text='Exercise E - Add a reset button (medium)' />
+
+    <p>
+      Add a reset button to restore the counter value to 0.
+    </p>
+
+    <Example live>
+      <CounterRedux />
+    </Example>
+
+    <SectionTitle text='Exercise F - Dynamic increment / decrement (hard)' />
+
+    <p>
+      Add a number input that dictates by how much the two new buttons added in
+      exercise C increment and decrement the counter. 
+    </p>
+
+    <Example live>
+      <CounterRedux />
+    </Example>
+
+    <SectionTitle text='Exercise G - For real?' />
+
+    <p>
+      😱 YOU ALREADY DONE? Alright, help your neighbour then!
+    </p>
   </div>
 )
 
