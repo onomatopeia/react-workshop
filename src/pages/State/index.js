@@ -4,8 +4,8 @@ import PageTitle from '../../components/PageTitle'
 import SectionTitle from '../../components/SectionTitle'
 import Code from '../../components/Code'
 import Example from '../../components/Example'
-import AskBeforeUnload from './AskBeforeUnload'
 import MousePosition from './MousePosition'
+import HelloYou from './HelloYou'
 
 const Page = () => (
   <div>
@@ -18,10 +18,11 @@ const Page = () => (
     </p>
 
     <p>
-      The state can be set through <code>this.setState(…)</code>. Then it can
-      be read through <code>this.state</code> (containing an object). It can
-      only be set once the component has “mounted”, that is, has been initially
-      rendered (known with <code>componentDidMount</code> lifecycle event hook).
+      The state can be set through <code>this.setState(…)</code> (never modify
+      it directly). Then it can be read through <code>this.state</code> (
+      containing an object). It can only be set once the component has
+      “mounted”, that is, has been initially rendered (known with <code>
+      componentDidMount</code> lifecycle event hook).
     </p>
 
     <Code language='js'>{`class MyComponent extends React.Component {
@@ -69,20 +70,19 @@ const Page = () => (
       <Timer seconds={42} />
     </Example>
 
-    <SectionTitle text='Exercise B - Ask Before Unload (medium)' />
+    <SectionTitle text='Exercise B - Display your name (easy)' />
 
     <p>
-      Build a component that ask for confirmation before leaving the page. Find
-      more information
-      about <a href='https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onbeforeunload' target='_blank'>this Web API on MDN</a>.
-      Get started with the code in <code>AskBeforeUnload/index.js</code>
+      Add an event listener to the <code>HelloYou</code> component to save the
+      input value in the state and render it in the paragraph following the
+      input.
     </p>
 
     <Example live>
-      <AskBeforeUnload />
+      <HelloYou />
     </Example>
 
-    <SectionTitle text='Exercise C - Mouse Position Recording (medium)' />
+    <SectionTitle text='Exercise C - Record mouse position (medium)' />
 
     <p>
       Display the live mouse position on the page.

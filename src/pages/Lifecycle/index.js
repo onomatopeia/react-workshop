@@ -4,6 +4,7 @@ import PageTitle from '../../components/PageTitle'
 import SectionTitle from '../../components/SectionTitle'
 import Example from '../../components/Example'
 import Logger from './Logger'
+import AskBeforeUnload from './AskBeforeUnload'
 
 const Page = (props) => (
   <div>
@@ -61,7 +62,7 @@ const Page = (props) => (
     <p>
       You may notice this weird <code>ref</code> in the <code>render</code> method.
       A ref is a way to access the underlying actual DOM node for a component. In
-      this case, we want to access the <code>pre</code> node. We store it in
+      this case, we want to access the <code>code</code> node. We store it in
       a <code>code</code> variable on the class instance. Later on we use it in
       the <code>componentDidMount</code> method to highlight the code.
     </p>
@@ -70,7 +71,7 @@ const Page = (props) => (
       Feel free to have a look at <a href='https://facebook.github.io/react/docs/refs-and-the-dom.html' target='_blank'>refs in the React docs</a> to learn more.
     </p>
 
-    <SectionTitle text='Exercise - Log when mounted' />
+    <SectionTitle text='Exercise A - Log when mounted (easy)' />
 
     <p>
       Update the following component (<code>Logger.js</code>) to log something
@@ -80,6 +81,21 @@ const Page = (props) => (
     <Example live>
       <Logger />
     </Example>
+
+
+    <SectionTitle text='Exercise B - Ask Before Unload (medium)' />
+
+    <p>
+      Build a component that ask for confirmation before leaving the page. Find
+      more information
+      about <a href='https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onbeforeunload' target='_blank'>this Web API on MDN</a>.
+      Get started with the code in <code>AskBeforeUnload/index.js</code>
+    </p>
+
+    <Example live>
+      <AskBeforeUnload />
+    </Example>
+
   </div>
 )
 
