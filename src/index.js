@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { HashRouter } from 'react-router-dom'
 import Main from './components/Main'
-import Router from './components/Router'
+import App from './components/App'
 import Page from './components/Page'
 import './index.css'
 // Fela Setup
@@ -20,7 +20,7 @@ ReactDOM.render(
     <Provider renderer={renderer} mountNode={mountNode}>
       <Main>
         <Page>
-          <Router />
+          <App />
         </Page>
       </Main>
     </Provider>
