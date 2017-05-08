@@ -1,6 +1,7 @@
 import React from 'react'
 import Code from '../../components/Code'
 import PageTitle from '../../components/PageTitle'
+import SectionTitle from '../../components/SectionTitle'
 import Example from '../../components/Example'
 import CounterPlain from './CounterPlain'
 import CounterRedux from './CounterRedux'
@@ -10,8 +11,16 @@ const Page = (props) => (
     <PageTitle text='State Management' />
 
     <p>
-      blah, blah, blah, choose something
+      When building a more complex React app comes the moment to choose a way
+      to handle state. For simple scenarios where state is rather scoped, the
+      built-in component is usually more than enough.
     </p>
+
+    <p>
+      Below is a simple counter app made with the React state.
+    </p>
+
+    <SectionTitle text='React State' />
 
     <Code language='jsx'>{`/* CounterPlain/index.js */
 import React from 'react'
@@ -33,21 +42,149 @@ class CounterPlain extends React.Component {
   }
 }
 
-module.exports = CounterPlain`}</Code>
+export default CounterPlain`}</Code>
 
     <Example live>
       <CounterPlain />
     </Example>
 
-    <PageTitle text='State management systems' />
+    <SectionTitle text='Redux' />
 
-    <p>Redux</p>
+    <p>
+      However, when things get more complicated and several components need to
+      get access to the state of the application, it can be a good time to start
+      looking into more advanced solution such as Redux. Side note: this counter
+      app is *not* a good example to justify Redux (overkill much).
+    </p>
+
+    <p>
+      Redux is a predictable state container for JavaScript apps. In other words,
+      it’s a pattern that helps you structure your application in having a single
+      source of truth (a store), and a clean way to handle data flow.
+    </p>
+
+    <p>
+      It all starts with a store. The store is an object on steroids that contain
+      the entire state of your app. It is provided to your app through
+      a <code>Provider</code> (wrapping your main component).
+    </p>
+
+    <Code language='jsx'>{`import React from 'react'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import counterReducer from './reducer'
+import Counter from './Counter'
+
+const store = createStore(counterReducer)
+
+const CounterRedux = () => (
+  <Provider store={store}>
+    <Counter />
+  </Provider>
+)
+
+export default CounterRedux
+`}</Code>
+
+  <p>
+    The store needs a “reducer” to work. A reducer is a big-ass function that
+    takes the existing state of the store as well as an action to perform and
+    returns the new state for the store.
+  </p>
+
+  <Code language='jsx'>{`const counterReducer = (state = { count: 0 }, action) => {
+  switch (action.type) {
+    case 'INCREMENT':
+      return { count: state.count + 1 }
+    case 'DECREMENT':
+      return { count: state.count - 1 }
+    default:
+      return state
+  }
+}
+
+export default counterReducer
+`}</Code>
+
+  <p>
+    An action is a function returning an object with a <code>type</code> key.
+    This type tells the reducer what operation to perform. It can be
+    “dispatched”, that is, executed in direction of the reducer so it has an
+    impact on the store.
+  </p>
+
+  <Code language='jsx'>{`export const incrementCounter = () => ({
+  type: 'INCREMENT'
+})
+
+export const decrementCounter = () => ({
+  type: 'DECREMENT'
+})`}</Code>
+
+  <p>
+    Finally our component “connects” to the store to have access to the current
+    state as well as the pre-dispatched actions.
+  </p>
+
+  <Code language='jsx'>{`import React from 'react'
+import { connect } from 'react-redux'
+import { incrementCounter, decrementCounter } from './actions'
+
+const Counter = (props) => (
+  <div>
+    <div>{props.count}</div>
+    <button onClick={props.incrementCounter}>+</button>
+    <button onClick={props.decrementCounter}>-</button>
+  </div>
+)
+
+const mapStateToProps = (state) => ({
+  count: state.count
+})
+
+const mapDispatchToProps = (dispatch) => ({
+  incrementCounter: () => dispatch(incrementCounter()),
+  decrementCounter: () => dispatch(decrementCounter())
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Counter)
+`}</Code>
+    <Example live>
+      <CounterRedux />
+    </Example>
+
+    <SectionTitle text='Exercise A - Increment by 2 with state (very easy)' />
+
+    <p>
+      Update the React State example to increment the counter state by 2 instead
+      of 1.
+    </p>
+
+    <Example live>
+      <CounterPlain />
+    </Example>
+
+    <SectionTitle text='Exercise B - Increment by 2 with Redux (easy)' />
+
+    <p>
+      Update the Redux example to increment the counter state by 2 instead of 1.
+    </p>
 
     <Example live>
       <CounterRedux />
     </Example>
 
-    <p>MobX</p>
+    <SectionTitle text='Exercise B - Increment/decrement by 10 option (medium)' />
+
+    <p>
+      Update the Redux example to add two buttons to increment and decrement the
+      counter state by 10. Hint: a Redux action is a function returning the
+      plain JavaScript object of your choice.
+    </p>
+
+    <Example live>
+      <CounterRedux />
+    </Example>
   </div>
 )
 

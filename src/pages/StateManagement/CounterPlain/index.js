@@ -17,4 +17,4 @@ class CounterPlain extends React.Component {
   }
 }
 
-module.exports = CounterPlain
+export default CounterPlain
