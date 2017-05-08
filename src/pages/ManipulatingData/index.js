@@ -36,7 +36,7 @@ const Page = (props) => (
     </p>
 
 
-    <SectionTitle text='Exercise A - Filter on preferred name' />
+    <SectionTitle text='Exercise - Filter on preferred name' />
 
     <p>
       Right now, the form only filters on actual name. But what if we wanted to
