@@ -13,6 +13,7 @@ import About from '../../pages/About'
 import Children from '../../pages/Children'
 import Events from '../../pages/Events'
 import Styling from '../../pages/Styling'
+import WrappingUp from '../../pages/WrappingUp'
 
 const Router = () => (
   <div>
@@ -28,6 +29,7 @@ const Router = () => (
     <Route path='/ManipulatingData' component={ManipulatingData} />
     <Route path='/StateManagement' component={StateManagement} />
     <Route path='/Styling' component={Styling} />
+    <Route path='/WrappingUp' component={WrappingUp} />
     <Route path='/About' component={About} />
   </div>
 )

@@ -35,13 +35,16 @@ const Navigation = (props) => (
         <NavLink to='/HigherOrder' className='NavigationLink'>Higher-order functions</NavLink>
       </li>
       <li className='NavigationItem'>
-        <NavLink to='/ManipulatingData' className='NavigationLink'>Manipulating Data</NavLink>
+        <NavLink to='/ManipulatingData' className='NavigationLink'>Manipulating data</NavLink>
       </li>
       <li className='NavigationItem'>
         <NavLink to='/Styling' className='NavigationLink'>Styling</NavLink>
       </li>
       <li className='NavigationItem'>
         <NavLink to='/StateManagement' className='NavigationLink'>State management</NavLink>
+      </li>
+      <li className='NavigationItem'>
+        <NavLink to='/WrappingUp' className='NavigationLink'>Wrapping up</NavLink>
       </li>
       <li className='NavigationItem'>
         <NavLink to='/About' className='NavigationLink'>About us</NavLink>
