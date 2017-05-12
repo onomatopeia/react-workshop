@@ -51,6 +51,10 @@ const Page = () => (
 
     <ul>
       <li>
+        State should never be assigned manually; always
+        use <code>setState</code>.
+      </li>
+      <li>
         A functional component (a component expressed as a function) cannot
         hold state; a proper <code>class</code> has to be used.
       </li>
@@ -73,9 +77,9 @@ const Page = () => (
     <SectionTitle text='Exercise B - Display your name (easy)' />
 
     <p>
-      Add an event listener to the <code>HelloYou</code> component to save the
-      input value in the state and render it in the paragraph following the
-      input.
+      Add an event listener to the component in <code>HelloYou/index.js</code> so
+      the input value (<code>event.target.value</code>) is stored in the state.
+      Then render it in the paragraph following the input.
     </p>
 
     <Example live>
