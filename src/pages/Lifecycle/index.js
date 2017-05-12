@@ -18,6 +18,11 @@ const Page = (props) => (
       lifecycle.
     </p>
 
+    <p>
+      For a visual representation of the lifecycle, have a look at <a href='https://medium.com/@eddychang_86557/react-lifecycle-methods-diagram-38ac92bb6ff1' target='_blank'>
+      this article by Eddy Chang</a>.
+    </p>
+
     <SectionTitle text='Mounting' />
 
     <p>
