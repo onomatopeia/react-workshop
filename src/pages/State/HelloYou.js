@@ -1,6 +1,15 @@
 import React from 'react'
 
 class HelloYou extends React.Component {
+  // By default, the state is `null`
+  state = {
+
+  }
+
+  handleChange = (event) => {
+    // @TODO: save the input value (`event.target.value`) into the state
+  }
+
   render () {
     return (
       <div>
