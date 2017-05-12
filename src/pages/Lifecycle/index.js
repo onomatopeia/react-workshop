@@ -42,7 +42,7 @@ const Page = (props) => (
     <Code language='jsx'>{`class Code extends React.Component {
   componentDidMount () {
     if (window.Prism) {
-      window.Prism.highlightElement(this.code)
+      window.Prism.highlightElement(this.codeNode)
     }
   }
 
@@ -51,7 +51,7 @@ const Page = (props) => (
 
     return (
       <pre className={'Pre ' + language}>
-        <code className='Code' ref={(ref) => (this.code = ref)}>
+        <code className='Code' ref={(ref) => (this.codeNode = ref)}>
           {this.props.children}
         </code>
       </pre>
