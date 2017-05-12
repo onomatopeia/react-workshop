@@ -14,10 +14,10 @@ const Navigation = (props) => (
         <NavLink to='/HelloWorld' className='NavigationLink'>Hello World</NavLink>
       </li>
       <li className='NavigationItem'>
-        <NavLink to='/SimpleProps' className='NavigationLink'>Props</NavLink>
+        <NavLink to='/SimpleProps' className='NavigationLink'>Simple Props</NavLink>
       </li>
       <li className='NavigationItem'>
-        <NavLink to='/CompleteProps' className='NavigationLink'>More props</NavLink>
+        <NavLink to='/CompleteProps' className='NavigationLink'>Complete props</NavLink>
       </li>
       <li className='NavigationItem'>
         <NavLink to='/Children' className='NavigationLink'>React Children</NavLink>
