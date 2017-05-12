@@ -22,9 +22,27 @@ export default () => (
       <li>Redux</li>
       <li>GraphQL</li>
       <li>Express</li>
+      <li>koa</li>
+      <li>mocha</li>
+      <li>chai</li>
       <li>Fela</li>
       <li>Contentful</li>
+      <li>Amazon Web Services</li>
+      <li>TypeScript</li>
+      <li>Postgres</li>
+      <li>redis</li>
       <li>… and much more!</li>
     </ul>
+
+    <p>and here are some other things we`re doing/have</p>
+
+    <ul>
+      <li>daily standups, plannings, reviews, retros</li>
+      <li>cross functional teams</li>
+      <li>test first</li>
+      <li>pair programming</li>
+      <li>CI/CD</li>
+    </ul>
+
   </div>
 )
