@@ -20,28 +20,26 @@ export default () => (
       <li>Node.js</li>
       <li>React</li>
       <li>Redux</li>
-      <li>GraphQL</li>
-      <li>Express</li>
-      <li>koa</li>
-      <li>mocha</li>
-      <li>chai</li>
       <li>Fela</li>
-      <li>Contentful</li>
-      <li>Amazon Web Services</li>
       <li>TypeScript</li>
-      <li>Postgres</li>
-      <li>redis</li>
+      <li>Express, Koa</li>
+      <li>Mocha, Chai, Jest, Nightwatch</li>
+      <li>Contentful</li>
+      <li>GraphQL, Postgres, Redis</li>
+      <li>Amazon Web Services</li>
       <li>… and much more!</li>
     </ul>
 
-    <p>and here are some other things we`re doing/have</p>
+    <p>And here are some other things we’re doing:</p>
 
     <ul>
-      <li>daily standups, plannings, reviews, retros</li>
-      <li>cross functional teams</li>
-      <li>test first</li>
-      <li>pair programming</li>
-      <li>CI/CD</li>
+      <li>Daily stand-ups, plannings, reviews, retrospectives…</li>
+      <li>Cross-functional teams</li>
+      <li>Test-drive development</li>
+      <li>Pair programming</li>
+      <li>
+        <abbr title='Continuous Integration'>CI</abbr>/<abbr title='Continuous Development'>CD</abbr>
+      </li>
     </ul>
 
   </div>
