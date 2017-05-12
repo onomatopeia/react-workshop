@@ -14,6 +14,7 @@ import Children from '../../pages/Children'
 import Events from '../../pages/Events'
 import Styling from '../../pages/Styling'
 import WrappingUp from '../../pages/WrappingUp'
+import Next from '../../pages/Next'
 
 const Router = () => (
   <div>
@@ -30,6 +31,7 @@ const Router = () => (
     <Route path='/StateManagement' component={StateManagement} />
     <Route path='/Styling' component={Styling} />
     <Route path='/WrappingUp' component={WrappingUp} />
+    <Route path='/Next' component={Next} />
     <Route path='/About' component={About} />
   </div>
 )
