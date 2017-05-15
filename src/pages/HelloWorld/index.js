@@ -19,8 +19,8 @@ const HelloWorld = () => <h1>Hello world</h1>
 export default HelloWorld`}</Code>
 
     <p>
-      JSX is an abstraction on top of React internal API (
-      namely <code>React.createElement</code>) and while not mandatory at all,
+      JSX is an abstraction on top of React internal API (namely <code>
+      React.createElement</code>) and while not mandatory at all,
       makes authoring components much nicer. You can learn more <a href='https://facebook.github.io/react/docs/jsx-in-depth.html' target='_blank'>
       about JSX in React’s docs</a>.
     </p>
