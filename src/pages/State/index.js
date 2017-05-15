@@ -77,7 +77,7 @@ const Page = () => (
     <SectionTitle text='Exercise B - Display your name (easy)' />
 
     <p>
-      Add an event listener to the component in <code>HelloYou/index.js</code> so
+      Add an event listener to the component in <code>HelloYou.js</code> so
       the input value (<code>event.target.value</code>) is stored in the state.
       Then render it in the paragraph following the input.
     </p>
@@ -90,7 +90,7 @@ const Page = () => (
 
     <p>
       Display the live mouse position on the page.
-      Get started with the code in <code>MousePosition/index.js</code>
+      Get started with the code in <code>MousePosition.js</code>
     </p>
 
     <Example live>
@@ -100,7 +100,7 @@ const Page = () => (
     <SectionTitle text='Exercise D - Integrate a 3rd party (hard)' />
 
     <p>
-      [Hard] Find a simple third-party library and initialise it inside your
+      Find a simple third-party library and initialise it inside your
       component (e.g.: <a href='http://flickity.metafizzy.co/' target='_blank'>Flickity</a>, <a href='https://github.com/edenspiekermann/a11y-dialog' target='_blank'>a11y-dialog</a>…).
     </p>
   </div>
