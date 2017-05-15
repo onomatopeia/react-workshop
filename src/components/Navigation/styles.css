@@ -38,3 +38,9 @@
 .Logo {
   max-height: 60px;
 }
+
+@media (max-width: 850px) {
+  .Navigation {
+    display: none;
+  }
+}
