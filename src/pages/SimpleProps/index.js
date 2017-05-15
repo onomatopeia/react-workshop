@@ -49,7 +49,7 @@ export default Title`}</Code>
       <Title text='Update me, I’m famous' />
     </Example>
 
-    <SectionTitle text='Exercise B - Change title content (medium)' />
+    <SectionTitle text='Exercise B - Add id attribute (medium)' />
 
     <p>
       Update the following <code>Title</code> component to accept and render an
