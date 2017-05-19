@@ -71,6 +71,12 @@ export default Title`}</Code>
     <Example live>
       <Title text='How about a H2?' />
     </Example>
+
+    <p>
+      Remember that the <code>Title</code> component is being rendered several
+      times in this page. Therefore, you will have to make sure to set up a
+      default value for that heading level / element prop.
+    </p>
   </div>
 )
 
