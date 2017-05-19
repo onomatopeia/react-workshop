@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import UserList from '../CompleteProps/UserList'
+import UserList from '../4-CompleteProps/UserList'
 
 class UserListContainer extends React.Component {
   static propTypes = {
