@@ -12,7 +12,7 @@ import HigherOrder from '../../pages/9-HigherOrder'
 import ManipulatingData from '../../pages/10-ManipulatingData'
 import Styling from '../../pages/11-Styling'
 import StateManagement from '../../pages/12-StateManagement'
-import WrappingUp from '../../pages/13-WrappingUp'
+import YourMove from '../../pages/13-YourMove'
 import Next from '../../pages/14-Next'
 import About from '../../pages/15-About'
 
@@ -30,7 +30,7 @@ const Router = () => (
     <Route path='/ManipulatingData' component={ManipulatingData} />
     <Route path='/StateManagement' component={StateManagement} />
     <Route path='/Styling' component={Styling} />
-    <Route path='/WrappingUp' component={WrappingUp} />
+    <Route path='/YourMove' component={YourMove} />
     <Route path='/Next' component={Next} />
     <Route path='/About' component={About} />
   </div>

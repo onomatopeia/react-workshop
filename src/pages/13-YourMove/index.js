@@ -6,7 +6,7 @@ import MessageSender from './App'
 
 const Page = (props) => (
   <div>
-    <PageTitle text='Wrapping Things Up' />
+    <PageTitle text='Your Move' />
 
     <p>
       To wrap things up, let’s build a tiny yet somehow complete project: a
@@ -86,7 +86,7 @@ const Page = (props) => (
 
     <p>
       ⭐️ If everything works, you should see messages above the form. And if you
-      feel like pushing things further, be sure to do so! 
+      feel like pushing things further, be sure to do so!
     </p>
   </div>
 )

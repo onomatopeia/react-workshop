@@ -44,7 +44,7 @@ const Navigation = (props) => (
         <NavLink to='/StateManagement' className='NavigationLink'>State management</NavLink>
       </li>
       <li className='NavigationItem'>
-        <NavLink to='/WrappingUp' className='NavigationLink'>Wrapping up</NavLink>
+        <NavLink to='/YourMove' className='NavigationLink'>Your Move</NavLink>
       </li>
       <li className='NavigationItem'>
         <NavLink to='/Next' className='NavigationLink'>What’s next?</NavLink>
