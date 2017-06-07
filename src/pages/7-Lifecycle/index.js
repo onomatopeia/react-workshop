@@ -4,7 +4,6 @@ import PageTitle from '../../components/PageTitle'
 import SectionTitle from '../../components/SectionTitle'
 import Example from '../../components/Example'
 import Logger from './Logger'
-import AskBeforeUnload from './AskBeforeUnload'
 
 const Page = (props) => (
   <div>
@@ -86,21 +85,6 @@ const Page = (props) => (
     <Example live>
       <Logger />
     </Example>
-
-
-    <SectionTitle text='Exercise B - Ask Before Unload (medium)' />
-
-    <p>
-      Build a component that ask for confirmation before leaving the page. Find
-      more information
-      about <a href='https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onbeforeunload' target='_blank'>this Web API on MDN</a>.
-      Get started with the code in <code>AskBeforeUnload/index.js</code>
-    </p>
-
-    <Example live>
-      <AskBeforeUnload />
-    </Example>
-
   </div>
 )
 
