@@ -32,16 +32,13 @@ const Navigation = (props) => (
         <NavLink to='/State' className='NavigationLink'>Stateful components</NavLink>
       </li>
       <li className='NavigationItem'>
+        <NavLink to='/StateManagement' className='NavigationLink'>State management</NavLink>
+      </li>
+      <li className='NavigationItem'>
         <NavLink to='/HigherOrder' className='NavigationLink'>Higher-order functions</NavLink>
       </li>
       <li className='NavigationItem'>
-        <NavLink to='/ManipulatingData' className='NavigationLink'>Manipulating data</NavLink>
-      </li>
-      <li className='NavigationItem'>
         <NavLink to='/Styling' className='NavigationLink'>Styling</NavLink>
-      </li>
-      <li className='NavigationItem'>
-        <NavLink to='/StateManagement' className='NavigationLink'>State management</NavLink>
       </li>
       <li className='NavigationItem'>
         <NavLink to='/YourMove' className='NavigationLink'>Your Move</NavLink>

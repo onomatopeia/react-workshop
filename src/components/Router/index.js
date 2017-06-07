@@ -8,13 +8,12 @@ import Children from '../../pages/5-Children'
 import Events from '../../pages/6-Events'
 import Lifecycle from '../../pages/7-Lifecycle'
 import State from '../../pages/8-State'
-import HigherOrder from '../../pages/9-HigherOrder'
-import ManipulatingData from '../../pages/10-ManipulatingData'
+import StateManagement from '../../pages/9-StateManagement'
+import HigherOrder from '../../pages/10-HigherOrder'
 import Styling from '../../pages/11-Styling'
-import StateManagement from '../../pages/12-StateManagement'
-import YourMove from '../../pages/13-YourMove'
-import Next from '../../pages/14-Next'
-import About from '../../pages/15-About'
+import YourMove from '../../pages/12-YourMove'
+import Next from '../../pages/13-Next'
+import About from '../../pages/14-About'
 
 const Router = () => (
   <div>
@@ -24,11 +23,10 @@ const Router = () => (
     <Route path='/CompleteProps' component={MoreProps} />
     <Route path='/Children' component={Children} />
     <Route path='/Events' component={Events} />
-    <Route path='/State' component={State} />
     <Route path='/Lifecycle' component={Lifecycle} />
-    <Route path='/HigherOrder' component={HigherOrder} />
-    <Route path='/ManipulatingData' component={ManipulatingData} />
+    <Route path='/State' component={State} />
     <Route path='/StateManagement' component={StateManagement} />
+    <Route path='/HigherOrder' component={HigherOrder} />
     <Route path='/Styling' component={Styling} />
     <Route path='/YourMove' component={YourMove} />
     <Route path='/Next' component={Next} />

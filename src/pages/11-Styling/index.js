@@ -1,6 +1,5 @@
 import React from 'react'
 import UserIndex from '../4-CompleteProps/UserIndex'
-import Search from '../10-ManipulatingData/Search'
 import Code from '../../components/Code'
 import PageTitle from '../../components/PageTitle'
 import SectionTitle from '../../components/SectionTitle'
@@ -178,16 +177,13 @@ export default Button`}</Code>
     </p>
 
     <p>
-      Try updating the <code>Search</code> component from earlier to highlight
-      matching results rather than filtering out non-matching entries. To get
-      started, remove the JavaScript filtering from the user list
-      in <code>UserListContainer</code>. Then, you will need to amend each user
-      in the list with some sort of prop to know if it’s matching or not; prop
-      which will be used for styling down the tree.
+      Try updating the <code>UserIndex</code> component to style it based on the
+      data. For instance, you could apply different styles based on age,
+      nationality, or email provider.
     </p>
 
     <Example live>
-      <Search {...props} />
+      <UserIndex />
     </Example>
 
   </div>
