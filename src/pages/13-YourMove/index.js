@@ -2,7 +2,7 @@ import React from 'react'
 import PageTitle from '../../components/PageTitle'
 import SectionTitle from '../../components/SectionTitle'
 import Example from '../../components/Example'
-import MessageSender from './App'
+import MessageBoard from './App'
 
 const Page = (props) => (
   <div>
@@ -10,7 +10,7 @@ const Page = (props) => (
 
     <p>
       To wrap things up, let’s build a tiny yet somehow complete project: a
-      little message sender. This should make use of almost everything we’ve
+      little message board. This should make use of almost everything we’ve
       seen so far. To not feel overwhelmed though, we’ll start this project
       with something relatively simple and add more to it.
     </p>
@@ -36,7 +36,7 @@ const Page = (props) => (
     </ul>
 
     <Example live>
-      <MessageSender />
+      <MessageBoard />
     </Example>
 
     <SectionTitle text='Dynamic styling' />

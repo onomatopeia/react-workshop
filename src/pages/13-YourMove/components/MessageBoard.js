@@ -2,7 +2,7 @@ import React from 'react'
 import Messages from './Messages'
 import Form from './Form'
 
-class MessageSender extends React.Component {
+class MessageBoard extends React.Component {
   render () {
     return (
       <div>
@@ -13,4 +13,4 @@ class MessageSender extends React.Component {
   }
 }
 
-export default MessageSender
+export default MessageBoard
