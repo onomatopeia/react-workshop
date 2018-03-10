@@ -17,20 +17,20 @@ import About from '../../pages/14-About'
 
 const Router = () => (
   <div>
-    <Route exact path='/' component={Home} />
-    <Route path='/HelloWorld' component={HelloWorld} />
-    <Route path='/SimpleProps' component={Props} />
-    <Route path='/CompleteProps' component={MoreProps} />
-    <Route path='/Children' component={Children} />
-    <Route path='/Events' component={Events} />
-    <Route path='/Lifecycle' component={Lifecycle} />
-    <Route path='/State' component={State} />
-    <Route path='/StateManagement' component={StateManagement} />
-    <Route path='/HigherOrder' component={HigherOrder} />
-    <Route path='/Styling' component={Styling} />
-    <Route path='/YourMove' component={YourMove} />
-    <Route path='/Next' component={Next} />
-    <Route path='/About' component={About} />
+    <Route exact path="/" component={Home} />
+    <Route path="/HelloWorld" component={HelloWorld} />
+    <Route path="/SimpleProps" component={Props} />
+    <Route path="/CompleteProps" component={MoreProps} />
+    <Route path="/Children" component={Children} />
+    <Route path="/Events" component={Events} />
+    <Route path="/Lifecycle" component={Lifecycle} />
+    <Route path="/State" component={State} />
+    <Route path="/StateManagement" component={StateManagement} />
+    <Route path="/HigherOrder" component={HigherOrder} />
+    <Route path="/Styling" component={Styling} />
+    <Route path="/YourMove" component={YourMove} />
+    <Route path="/Next" component={Next} />
+    <Route path="/About" component={About} />
   </div>
 )
 
