@@ -1,15 +1,13 @@
 @font-face {
   font-family: 'Calibre';
-  src: local('Calibre'),
-       url('../public/Calibre-Regular.woff2') format('woff2'),
-       url('../public/Calibre-Regular.woff') format('woff');
+  src: local('Calibre'), url('./assets/Calibre-Regular.woff2') format('woff2'),
+    url('./assets/Calibre-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Calibre';
-  src: local('Calibre'),
-       url('../public/Calibre-Semibold.woff2') format('woff2'),
-       url('../public/Calibre-Semibold.woff') format('woff');
+  src: local('Calibre'), url('./assets/Calibre-Semibold.woff2') format('woff2'),
+    url('./assets/Calibre-Semibold.woff') format('woff');
   font-weight: bold;
 }
 
@@ -17,11 +15,15 @@ html {
   box-sizing: border-box;
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: inherit;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
 }
 
@@ -48,7 +50,7 @@ h2 {
 }
 
 :not(pre) > code {
-  background-color: #EFEFEF;
+  background-color: #efefef;
   padding: 0 0.25em;
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   white-space: normal;
