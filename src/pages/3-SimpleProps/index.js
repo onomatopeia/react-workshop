@@ -4,19 +4,19 @@ import Code from '../../components/Code'
 import SectionTitle from '../../components/SectionTitle'
 import Example from '../../components/Example'
 
-const Page = (props) => (
+const Page = props => (
   <div>
-    <Title text='Props' />
+    <Title text="Props" />
 
     <p>
       As we have seen from the previous example, a React component can be seen
       as a function that accepts “props” (really just a fancy name for “data”)
-      and that outpus some markup in the form of JSX.
+      and that outputs some markup in the form of JSX.
     </p>
 
     <p>
-      All components, even those not using any props (like
-      our <code>HelloWorld</code> component from earlier) receives an object
+      All components, even those not using any props (like our{' '}
+      <code>HelloWorld</code> component from earlier) receives an object
       (possibly empty) as props.
     </p>
 
@@ -25,9 +25,9 @@ const Page = (props) => (
       prop. Here is how we could write it:
     </p>
 
-    <Code language='jsx'>{`import React from 'react'
+    <Code language="jsx">{`import React from 'react'
 
-const Title = (props) => <h1>{props.text}</h1>
+const Title = props => <h1>{props.text}</h1>
 
 export default Title`}</Code>
 
@@ -36,9 +36,9 @@ export default Title`}</Code>
       component definition in <code>Title.js</code>.
     </p>
 
-    <Code language='jsx'>{`<Title text='Props' />`}</Code>
+    <Code language="jsx">{`<Title text='Props' />`}</Code>
 
-    <SectionTitle text='Exercise A - Change title content (easy)' />
+    <SectionTitle text="Exercise A - Change title content (easy)" />
 
     <p>
       Update the following <code>Title</code> component to display the content
@@ -46,10 +46,10 @@ export default Title`}</Code>
     </p>
 
     <Example live>
-      <Title text='Update me, I’m famous' />
+      <Title text="Update me, I’m famous" />
     </Example>
 
-    <SectionTitle text='Exercise B - Add id attribute (medium)' />
+    <SectionTitle text="Exercise B - Add id attribute (medium)" />
 
     <p>
       Update the following <code>Title</code> component to accept and render an
@@ -57,10 +57,10 @@ export default Title`}</Code>
     </p>
 
     <Example live>
-      <Title text='I want an id!' />
+      <Title text="I want an id!" />
     </Example>
 
-    <SectionTitle text='Exercise C - Change heading level (hard)' />
+    <SectionTitle text="Exercise C - Change heading level (hard)" />
 
     <p>
       Update the <code>Title</code> component to accept a heading level (1 to 6)
@@ -69,7 +69,7 @@ export default Title`}</Code>
     </p>
 
     <Example live>
-      <Title text='How about a H2?' />
+      <Title text="How about a H2?" />
     </Example>
 
     <p>

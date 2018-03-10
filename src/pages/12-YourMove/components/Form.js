@@ -1,14 +1,14 @@
 import React from 'react'
 
 class Form extends React.Component {
-  render () {
+  render() {
     return (
       <div>
-        <label htmlFor='message'>What do you want to send? (140)</label>
+        <label htmlFor="message">What do you want to send? (280)</label>
         <div>
-          <textarea id='message'></textarea>
+          <textarea id="message" placeholder="Type in…" />
         </div>
-        <button type='button'>Send</button>
+        <button type="button">Send</button>
       </div>
     )
   }

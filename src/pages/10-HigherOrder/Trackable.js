@@ -1,30 +1,25 @@
 import React from 'react'
 
-const Trackable = (WrappedComponent) => {
+const Trackable = Component => {
   class TrackableComponent extends React.Component {
-    componentDidMount () {
-      console.log(`Component ${WrappedComponent.name} mounted.`)
+    componentDidMount() {
+      console.log(`Component ${Component.name} mounted.`)
     }
 
-    componentWillUnmount () {
-      console.log(`Component ${WrappedComponent.name} will unmount.`)
+    componentWillUnmount() {
+      console.log(`Component ${Component.name} will unmount.`)
     }
 
-    handleClick = (event) => {
-      console.log(`Component ${WrappedComponent.name} clicked.`)
+    handleClick = event => {
+      console.log(`Component ${Component.name} clicked.`)
 
       if (typeof this.props.onClick === 'function') {
         this.props.onClick(event)
       }
     }
 
-    render () {
-      return (
-        <WrappedComponent
-          {...this.props}
-          onClick={this.handleClick}
-        />
-      )
+    render() {
+      return <Component {...this.props} onClick={this.handleClick} />
     }
   }
 

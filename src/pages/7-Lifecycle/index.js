@@ -10,23 +10,71 @@ const Page = props => (
     <PageTitle text="Component lifecycle" />
 
     <p>
-      A React component has something called a “lifecycle”. In simple words, it
-      goes from the moment React knows it will have to be rendered, going as far
-      as the moment it gets “unrendered” if necessary. There is an API in a set
-      of hooks developers can use to react to certain events of the component
-      lifecycle.
+      A React component has something called a{' '}
+      <a
+        href="https://reactjs.org/docs/react-component.html#the-component-lifecycle"
+        target="_blank"
+        rel="nooper noreferrer"
+      >
+        “lifecycle”
+      </a>. In simple words, it goes from the moment React knows it will have to
+      be rendered, going as far as the moment it gets “unrendered” if necessary.
+      There is an API in a set of hooks developers can use to react (😉) to
+      certain events of the component lifecycle.
     </p>
 
-    <p>
-      For a visual representation of the lifecycle, have a look at{' '}
-      <a
-        href="https://medium.com/@eddychang_86557/react-lifecycle-methods-diagram-38ac92bb6ff1"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        this article by Eddy Chang
-      </a>.
-    </p>
+    <ul>
+      <li>
+        Mounting
+        <ul>
+          <li>
+            <code>constructor</code>
+          </li>
+          <li>
+            <code>componentWillMount</code> (deprecated in React 17)
+          </li>
+          <li>
+            <code>render</code>
+          </li>
+          <li>
+            <code>componentDidMount</code>
+          </li>
+        </ul>
+      </li>
+      <li>
+        Updating<ul>
+          <li>
+            <code>componentWillReceiveProps</code> (deprecated in React 17)
+          </li>
+          <li>
+            <code>shouldComponentUpdate</code>
+          </li>
+          <li>
+            <code>componentWillUpdate</code> (deprecated in React 17)
+          </li>
+          <li>
+            <code>render</code>
+          </li>
+          <li>
+            <code>componentDidUpdate</code>
+          </li>
+        </ul>
+      </li>
+      <li>
+        Unmounting<ul>
+          <li>
+            <code>componentWillUnmount</code>
+          </li>
+        </ul>
+      </li>
+      <li>
+        Error handling<ul>
+          <li>
+            <code>componentDidCatch</code>
+          </li>
+        </ul>
+      </li>
+    </ul>
 
     <SectionTitle text="Mounting" />
 
@@ -36,17 +84,23 @@ const Page = props => (
     </p>
 
     <p>
-      When interacting, with the DOM, the window element or basically anything
-      happening exclusively in the browser, you have to make sure to hook it on
+      When interacting with the DOM, the window element or browser APIs, you
+      have to make sure to do it in
       <code>componentDidMount</code> as this is when the DOM for your component
       is ready.
     </p>
 
     <p>
       The code snippets in this small website (rendered with the{' '}
-      <code>components/Code</code> component) are highlighted with Prism.js.
-      When a code block mounts, its own component uses the Prism API to
-      highlight it.
+      <code>components/Code</code> component) are highlighted with{' '}
+      <a
+        href="https://reactjs.org/docs/typechecking-with-proptypes.html"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Prism.js
+      </a>. When a <code>Code</code> component mounts, it uses the Prism API to
+      highlight its content.
     </p>
 
     <Code language="jsx">{`class Code extends React.Component {
@@ -57,11 +111,13 @@ const Page = props => (
   }
 
   render () {
-    const language = this.props.language ? \`language-\${this.props.language}\` : ''
+    const language = this.props.language
+      ? \`language-\${this.props.language}\`
+      : ''
 
     return (
       <pre className={'Pre ' + language}>
-        <code className='Code' ref={(ref) => (this.codeNode = ref)}>
+        <code className='Code' ref={ref => (this.codeNode = ref)}>
           {this.props.children}
         </code>
       </pre>
@@ -72,10 +128,10 @@ const Page = props => (
     <p>
       You may notice this weird <code>ref</code> in the <code>render</code>{' '}
       method. A ref is a way to access the underlying actual DOM node for a
-      component. In this case, we want to access the <code>code</code> node. We
-      store it in a <code>code</code> variable on the class instance. Later on
-      we use it in the <code>componentDidMount</code> method to highlight the
-      code.
+      component. In this case, we want to access the <code>code</code> node
+      element. We store it in a <code>code</code> property on the class
+      instance. Later on, we use it in the <code>componentDidMount</code> method
+      to highlight the code.
     </p>
 
     <p>

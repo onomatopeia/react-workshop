@@ -1,7 +1,7 @@
 import React from 'react'
 
 class Timer extends React.Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
 
     this.state = {
@@ -9,11 +9,11 @@ class Timer extends React.Component {
     }
   }
 
-  componentWillMount () {
+  componentWillMount() {
     this.timer = setInterval(this.increment, 1000)
   }
 
-  componentWillUnmount () {
+  componentWillUnmount() {
     clearInterval(this.timer)
   }
 
@@ -27,9 +27,12 @@ class Timer extends React.Component {
     return this.state.seconds === 1 ? 'second' : 'seconds'
   }
 
-  render () {
+  render() {
     return (
-      <p>👋🏻 I have been loaded for {this.state.seconds} {this.pluraliseSeconds()}.</p>
+      <p>
+        👋🏻 I have been rendered for {this.state.seconds}{' '}
+        {this.pluraliseSeconds()}.
+      </p>
     )
   }
 }

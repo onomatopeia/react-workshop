@@ -9,27 +9,26 @@ import ButtonStyled from './ButtonStyled'
 import ButtonFela from './ButtonFela'
 import ButtonJSS from './ButtonJSS'
 
-const Page = (props) => (
+const Page = props => (
   <div>
-    <PageTitle text='Styling' />
+    <PageTitle text="Styling" />
 
     <p>
-      Styling components in React can be done in many ways, from vanilla styles
-      in a separate CSS file to CSS-in-JS solutions, and anything in between!
-      To put it simply, this is a mess. But that also means you can pick what
-      you like.
+      Styling components in React can be done in many ways, from standard
+      styling in CSS files to CSS-in-JS solutions, and anything in between (CSS
+      modules, preprocessors…)! To put it simply, this is a mess. But that also
+      means you can pick what you like.
     </p>
 
     <p>
       In this (create-react-app) project, we use separate CSS files that are
       imported within components through some hidden Webpack magic. This means
       we can author CSS based on class names and regular selectors that we apply
-      on our JSX. Under the hood, Webpack is extracting this CSS
-      into <code>style</code> blocks injected in the <code>head</code> of the
-      page.
+      on our JSX. Under the hood, Webpack is extracting this CSS into{' '}
+      <code>style</code> blocks injected in the <code>head</code> of the page.
     </p>
 
-    <Code language='jsx'>{`/* Button/index.js */
+    <Code language="jsx">{`/* Button/index.js */
 import React from 'react'
 import './styles.css'
 
@@ -41,8 +40,7 @@ const Button = (props) => (
 
 export default Button`}</Code>
 
-
-<Code language='css'>{`/* Button/styles.css */
+    <Code language="css">{`/* Button/styles.css */
 .button {
   border: 1px solid;
   color: rgb(52, 183, 188);
@@ -63,7 +61,7 @@ export default Button`}</Code>
       <Button>I’m a button</Button>
     </Example>
 
-    <SectionTitle text='CSS preprocessors' />
+    <SectionTitle text="CSS preprocessors" />
 
     <p>
       One thing about React and its componentized approach is that it makes
@@ -73,8 +71,15 @@ export default Button`}</Code>
     </p>
 
     <p>
-      create-react-app provides <a href='https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-a-css-preprocessor-sass-less-etc' target='_blank' rel='noopener noreferrer'>a way to use a CSS preprocessors</a> without
-      having to bring own your own full configuration.
+      create-react-app provides{' '}
+      <a
+        href="https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-a-css-preprocessor-sass-less-etc"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        a way to use a CSS preprocessors
+      </a>{' '}
+      without having to bring own your own full configuration.
     </p>
 
     <p>
@@ -82,22 +87,43 @@ export default Button`}</Code>
       as many benefits (if not more) as CSS processors like LESS or Sass.
     </p>
 
-    <SectionTitle text='CSS-in-JS' />
+    <SectionTitle text="CSS-in-JS" />
 
     <p>
       There are many different solutions to this, we’ll quickly cover what
-      appears to be the most popular solutions – 
-      <a href='https://styled-components.com/' target='_blank' rel='noopener noreferrer'>styled-components 💅
-      </a> and <a href='https://github.com/cssinjs/react-jss' target='_blank' rel='noopener noreferrer'>JSS</a>,
-      as well as our favourite – <a href='http://fela.js.org/' target='_blank' rel='noopener noreferrer'>Fela</a>.
+      appears to be the most popular solutions –
+      <a
+        href="https://styled-components.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        styled-components 💅
+      </a>{' '}
+      and{' '}
+      <a
+        href="https://github.com/cssinjs/react-jss"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        JSS
+      </a>, as well as our favourite –{' '}
+      <a href="http://fela.js.org/" target="_blank" rel="noopener noreferrer">
+        Fela
+      </a>.
     </p>
 
     <h3>JSS</h3>
 
     <p>
-      JSS is sort of a precursor of CSS-in-JSS and relies on POJO (Plain-Old
-      JavaScript Object) as a way to define styles. In a React application,
-      these styles would be bound to a component with a Higher-Order function.
+      JSS is sort of a precursor of CSS-in-JS and relies on{' '}
+      <abbr
+        title="Plain-Old
+      JavaScript Object"
+      >
+        POJO
+      </abbr>{' '}
+      as a way to define styles. In a React application, these styles would be
+      bound to a component with a Higher-Order function.
     </p>
 
     <p>
@@ -107,7 +133,8 @@ export default Button`}</Code>
     </p>
 
     <p>
-      Below is a button styled with JSS. You can find it in <code>ButtonJSS/index.js</code>.
+      Below is a button styled with JSS. You can find it in{' '}
+      <code>ButtonJSS/index.js</code>.
     </p>
 
     <Example live>
@@ -124,12 +151,13 @@ export default Button`}</Code>
     </p>
 
     <p>
-      It works pretty much the same way as JSS and generate
-      a <code>style</code> block in the head of the page to inject styles.
+      It works pretty much the same way as JSS and generate a <code>style</code>{' '}
+      block in the head of the page to inject styles.
     </p>
 
     <p>
-      Below is a button styled with styled-components 💅. You can find it in <code>ButtonStyled/index.js</code>.
+      Below is a button styled with styled-components 💅. You can find it in{' '}
+      <code>ButtonStyled/index.js</code>.
     </p>
 
     <Example live>
@@ -155,20 +183,19 @@ export default Button`}</Code>
       different these solutions are. Also have a look at the <code>head</code>.
     </p>
 
-    <SectionTitle text='Exercise A - Dive into CSS-in-JS' />
+    <SectionTitle text="Exercise A - Dive into CSS-in-JS" />
 
     <p>
       Pick one of the 3 aforementioned CSS-in-JS solutions and add some styles
-      to the <code>User</code> and <code>UserList</code> components in
-      the <code>CompleteProps</code> folder.
+      to the <code>User</code> and <code>UserList</code> components in the{' '}
+      <code>CompleteProps</code> folder.
     </p>
 
     <Example live>
       <UserIndex />
     </Example>
 
-
-    <SectionTitle text='Exercise B - Use dynamic props' />
+    <SectionTitle text="Exercise B - Use dynamic props" />
 
     <p>
       One of the major benefits of using JavaScript to apply styles is that it
@@ -185,7 +212,6 @@ export default Button`}</Code>
     <Example live>
       <UserIndex />
     </Example>
-
   </div>
 )
 

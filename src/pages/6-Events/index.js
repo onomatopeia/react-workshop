@@ -37,8 +37,8 @@ const Page = props => (
         Synthetic Events
       </a>{' '}
       for the sake of browser compatibility and most importantly speed
-      efficiency. We guess. While you don’t really have to know that per se,
-      it’s something you’ll get to experience at some point (for instance{' '}
+      efficiency. While you don’t really have to know that per se, it’s
+      something you’ll get to experience at some point (for instance{' '}
       <a
         href="https://reactjs.org/docs/events.html#event-pooling"
         target="_blank"
