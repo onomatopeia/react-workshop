@@ -58,7 +58,7 @@ export default CounterPlain`}</Code>
     </p>
 
     <p>
-      <a href='http://redux.js.org/' target='_blank'>Redux</a> is a predictable
+      <a href='http://redux.js.org/' target='_blank' rel='noopener noreferrer'>Redux</a> is a predictable
       state container for JavaScript apps. In other words, it’s a pattern that
       helps you structure your application in having a single source of truth
       (a store), and a clean way to handle data flow.

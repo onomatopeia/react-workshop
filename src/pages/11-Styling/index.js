@@ -73,7 +73,7 @@ export default Button`}</Code>
     </p>
 
     <p>
-      create-react-app provides <a href='https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-a-css-preprocessor-sass-less-etc' target='_blank'>a way to use a CSS preprocessors</a> without
+      create-react-app provides <a href='https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-a-css-preprocessor-sass-less-etc' target='_blank' rel='noopener noreferrer'>a way to use a CSS preprocessors</a> without
       having to bring own your own full configuration.
     </p>
 
@@ -87,9 +87,9 @@ export default Button`}</Code>
     <p>
       There are many different solutions to this, we’ll quickly cover what
       appears to be the most popular solutions – 
-      <a href='https://styled-components.com/' target='_blank'>styled-components 💅
-      </a> and <a href='https://github.com/cssinjs/react-jss' target='_blank'>JSS</a>,
-      as well as our favourite – <a href='http://fela.js.org/' target='_blank'>Fela</a>.
+      <a href='https://styled-components.com/' target='_blank' rel='noopener noreferrer'>styled-components 💅
+      </a> and <a href='https://github.com/cssinjs/react-jss' target='_blank' rel='noopener noreferrer'>JSS</a>,
+      as well as our favourite – <a href='http://fela.js.org/' target='_blank' rel='noopener noreferrer'>Fela</a>.
     </p>
 
     <h3>JSS</h3>

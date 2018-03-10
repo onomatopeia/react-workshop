@@ -28,10 +28,10 @@ const Page = (props) => (
     <SectionTitle text='Synthetic Events' />
 
     <p>
-      React proxies DOM events as <a href='https://facebook.github.io/react/docs/events.html' target='_blank'>Synthetic Events</a> for the sake of browser
+      React proxies DOM events as <a href='https://facebook.github.io/react/docs/events.html' target='_blank' rel='noopener noreferrer'>Synthetic Events</a> for the sake of browser
       compatibility and most importantly speed efficiency. We guess. While you
       don’t really have to know that per se, it’s something you’ll get to
-      experience at some point (for instance <a href='https://facebook.github.io/react/docs/events.html#event-pooling' target='_blank'>when trying to access an event
+      experience at some point (for instance <a href='https://facebook.github.io/react/docs/events.html#event-pooling' target='_blank' rel='noopener noreferrer'>when trying to access an event
       within a callback</a>).
     </p>
 

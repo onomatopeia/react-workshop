@@ -41,12 +41,12 @@ const Page = (props) => (
 
     <ul>
       <li>
-        <a href='http://reactpatterns.com/' target='_blank'>
+        <a href='http://reactpatterns.com/' target='_blank' rel='noopener noreferrer'>
           React Patterns
         </a>, a small yet insightful of useful React patterns
       </li>
       <li>
-        <a href='https://egghead.io/courses/getting-started-with-redux' target='_blank'>
+        <a href='https://egghead.io/courses/getting-started-with-redux' target='_blank' rel='noopener noreferrer'>
           Getting Started with Redux
         </a>, a video series from Dan Abramov, the creator of Redux and React core team member
       </li>
@@ -57,7 +57,7 @@ const Page = (props) => (
     <p>
       We are well aware that setting up a full-blown React project can be
       cumbersome, especially when you want to use JSX. That’s why we went
-      with <a href='https://github.com/facebookincubator/create-react-app' target='_blank'>create-react-app
+      with <a href='https://github.com/facebookincubator/create-react-app' target='_blank' rel='noopener noreferrer'>create-react-app
       </a> for this support and why you should have a look at it.
     </p>
 
@@ -73,7 +73,7 @@ $ create-react-app my-project`}</Code>
     <SectionTitle text='Have a look at Next.js' />
 
     <p>
-      Along the same lines as create-react-app, there is <a href='https://zeit.co/blog/next' target='_blank'>
+      Along the same lines as create-react-app, there is <a href='https://zeit.co/blog/next' target='_blank' rel='noopener noreferrer'>
       Next.js</a> from Zeit. It is similar while a little more opinionated. It
       also comes up with isomorphic setup out-of-the-box as well as quite a lot
       of nice features.

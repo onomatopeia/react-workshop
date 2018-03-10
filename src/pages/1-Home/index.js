@@ -8,7 +8,7 @@ export default () => (
     <PageTitle text='React is undefined' />
 
     <p>
-      Welcome to this introduction to <a href='https://facebook.github.io/react/' target='_blank'>
+      Welcome to this introduction to <a href='https://facebook.github.io/react/' target='_blank' rel='noopener noreferrer' >
       React</a>! In the next few hours, we’ll see what is React, why would we
       use it over some over technologies, and how to get started with writing
       React components.
@@ -75,7 +75,7 @@ export default () => (
       Now when it comes to know *what* to render, React does a “reconciliation”.
       This is the process in which React compares two virtual DOM trees to
       figure out what has changed and what needs to be refreshed. You can
-      read <a href='https://facebook.github.io/react/docs/reconciliation.html' target='_blank'>about the reconciliation process
+      read <a href='https://facebook.github.io/react/docs/reconciliation.html' target='_blank' rel='noopener noreferrer'>about the reconciliation process
       </a> more in details in the official documentation.
     </p>
 

@@ -18,7 +18,7 @@ const Page = (props) => (
     </p>
 
     <p>
-      For a visual representation of the lifecycle, have a look at <a href='https://medium.com/@eddychang_86557/react-lifecycle-methods-diagram-38ac92bb6ff1' target='_blank'>
+      For a visual representation of the lifecycle, have a look at <a href='https://medium.com/@eddychang_86557/react-lifecycle-methods-diagram-38ac92bb6ff1' target='_blank' rel='noopener noreferrer'>
       this article by Eddy Chang</a>.
     </p>
 
@@ -72,7 +72,7 @@ const Page = (props) => (
     </p>
 
     <p>
-      Feel free to have a look at <a href='https://facebook.github.io/react/docs/refs-and-the-dom.html' target='_blank'>refs in the React docs</a> to learn more.
+      Feel free to have a look at <a href='https://facebook.github.io/react/docs/refs-and-the-dom.html' target='_blank' rel='noopener noreferrer'>refs in the React docs</a> to learn more.
     </p>
 
     <SectionTitle text='Exercise A - Log when mounted (easy)' />

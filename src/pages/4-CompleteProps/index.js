@@ -50,7 +50,7 @@ User.propTypes = {
 
     <p>
       Of course this is not mandatory and tends more and more to be replaced by
-      something like <a href='https://flow.org/' target='_blank'>Flow</a> or <a href='http://www.typescriptlang.org/' target='_blank'>TypeScript</a>.
+      something like <a href='https://flow.org/' target='_blank' rel='noopener noreferrer'>Flow</a> or <a href='http://www.typescriptlang.org/' target='_blank' rel='noopener noreferrer'>TypeScript</a>.
     </p>
 
     <SectionTitle text='Exercise A - Add yourself to the user list' />

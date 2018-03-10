@@ -101,7 +101,7 @@ const Page = () => (
 
     <p>
       Find a simple third-party library and initialise it inside your
-      component (e.g.: <a href='http://flickity.metafizzy.co/' target='_blank'>Flickity</a>, <a href='https://github.com/edenspiekermann/a11y-dialog' target='_blank'>a11y-dialog</a>…).
+      component (e.g.: <a href='http://flickity.metafizzy.co/' target='_blank' rel='noopener noreferrer'>Flickity</a>, <a href='https://github.com/edenspiekermann/a11y-dialog' target='_blank' rel='noopener noreferrer'>a11y-dialog</a>…).
     </p>
   </div>
 )

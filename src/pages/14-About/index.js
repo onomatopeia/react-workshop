@@ -5,7 +5,7 @@ export default () => (
     <h1>About us</h1>
 
     <p>
-      We are <a href='https://twitter.com/smartmike' target='_blank'>Mike</a> and <a href='https://twitter.com/HugoGiraudel' target='_blank'>Hugo</a>. We met at Edenspiekermann where we worked previously before joining N26 where we try very hard to change the face of mobile banking in Europe.
+      We are <a href='https://twitter.com/smartmike' target='_blank' rel='noopener noreferrer'>Mike</a> and <a href='https://twitter.com/HugoGiraudel' target='_blank' rel='noopener noreferrer'>Hugo</a>. We met at Edenspiekermann where we worked previously before joining N26 where we try very hard to change the face of mobile banking in Europe.
     </p>
 
     <p>
