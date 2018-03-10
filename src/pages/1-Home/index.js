@@ -80,7 +80,7 @@ export default () => (
       This is the process in which React compares two virtual DOM trees to
       figure out what has changed and what needs to be refreshed. You can read{' '}
       <a
-        href="https://facebook.github.io/react/docs/reconciliation.html"
+        href="https://reactjs.org/docs/reconciliation.html"
         target="_blank"
         rel="noopener noreferrer"
       >

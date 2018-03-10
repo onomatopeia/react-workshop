@@ -5,9 +5,9 @@ import SectionTitle from '../../components/SectionTitle'
 import Example from '../../components/Example'
 import Logger from './Logger'
 
-const Page = (props) => (
+const Page = props => (
   <div>
-    <PageTitle text='Component lifecycle' />
+    <PageTitle text="Component lifecycle" />
 
     <p>
       A React component has something called a “lifecycle”. In simple words, it
@@ -18,11 +18,17 @@ const Page = (props) => (
     </p>
 
     <p>
-      For a visual representation of the lifecycle, have a look at <a href='https://medium.com/@eddychang_86557/react-lifecycle-methods-diagram-38ac92bb6ff1' target='_blank' rel='noopener noreferrer'>
-      this article by Eddy Chang</a>.
+      For a visual representation of the lifecycle, have a look at{' '}
+      <a
+        href="https://medium.com/@eddychang_86557/react-lifecycle-methods-diagram-38ac92bb6ff1"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        this article by Eddy Chang
+      </a>.
     </p>
 
-    <SectionTitle text='Mounting' />
+    <SectionTitle text="Mounting" />
 
     <p>
       A component is said to have mounted when it has been fully rendered in the
@@ -37,13 +43,13 @@ const Page = (props) => (
     </p>
 
     <p>
-      The code snippets in this small website (rendered with
-      the <code>components/Code</code> component) are highlighted with Prism.js.
+      The code snippets in this small website (rendered with the{' '}
+      <code>components/Code</code> component) are highlighted with Prism.js.
       When a code block mounts, its own component uses the Prism API to
       highlight it.
     </p>
 
-    <Code language='jsx'>{`class Code extends React.Component {
+    <Code language="jsx">{`class Code extends React.Component {
   componentDidMount () {
     if (window.Prism) {
       window.Prism.highlightElement(this.codeNode)
@@ -64,18 +70,27 @@ const Page = (props) => (
 }`}</Code>
 
     <p>
-      You may notice this weird <code>ref</code> in the <code>render</code> method.
-      A ref is a way to access the underlying actual DOM node for a component. In
-      this case, we want to access the <code>code</code> node. We store it in
-      a <code>code</code> variable on the class instance. Later on we use it in
-      the <code>componentDidMount</code> method to highlight the code.
+      You may notice this weird <code>ref</code> in the <code>render</code>{' '}
+      method. A ref is a way to access the underlying actual DOM node for a
+      component. In this case, we want to access the <code>code</code> node. We
+      store it in a <code>code</code> variable on the class instance. Later on
+      we use it in the <code>componentDidMount</code> method to highlight the
+      code.
     </p>
 
     <p>
-      Feel free to have a look at <a href='https://facebook.github.io/react/docs/refs-and-the-dom.html' target='_blank' rel='noopener noreferrer'>refs in the React docs</a> to learn more.
+      Feel free to have a look at{' '}
+      <a
+        href="https://reactjs.org/docs/refs-and-the-dom.html"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        refs in the React docs
+      </a>{' '}
+      to learn more.
     </p>
 
-    <SectionTitle text='Exercise A - Log when mounted (easy)' />
+    <SectionTitle text="Exercise A - Log when mounted (easy)" />
 
     <p>
       Update the following component (<code>Logger.js</code>) to log something

@@ -1,13 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const User = (props) => (
+const User = props => (
   <span>
-    {props.preferredName || props.name}: <a href={`mailto:${props.email}`}>{props.email}</a>
+    {props.preferredName || props.name}:{' '}
+    <a href={`mailto:${props.email}`}>{props.email}</a>
   </span>
 )
 
-// https://facebook.github.io/react/docs/typechecking-with-proptypes.html
+// https://reactjs.org/docs/typechecking-with-proptypes.html
 User.propTypes = {
   name: PropTypes.string.isRequired,
   email: PropTypes.string.isRequired,

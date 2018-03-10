@@ -2,12 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import User from '../User'
 
-const UserList = (props) => (
+const UserList = props => (
   <ul>
-    {props.users.map((user) => (
+    {props.users.map(user => (
       // To know more about React keys
-      // https://facebook.github.io/react/docs/lists-and-keys.html
-      // https://facebook.github.io/react/docs/reconciliation.html#keys
+      // https://reactjs.org/docs/lists-and-keys.html
+      // https://reactjs.org/docs/reconciliation.html#keys
       <li key={user.email}>
         <User {...user} />
       </li>
@@ -15,7 +15,7 @@ const UserList = (props) => (
   </ul>
 )
 
-// https://facebook.github.io/react/docs/typechecking-with-proptypes.html
+// https://reactjs.org/docs/typechecking-with-proptypes.html
 UserList.propTypes = {
   users: PropTypes.array.isRequired
 }
