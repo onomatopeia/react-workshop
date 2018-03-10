@@ -12,7 +12,7 @@ export default () => (
       <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
         React
       </a>! In the next few hours, we’ll see what is React, why would we use it
-      over some over technologies, and how to get started with writing React
+      over some other technologies, and how to get started with writing React
       components.
     </p>
 
@@ -44,7 +44,7 @@ export default () => (
     </p>
 
     <p>
-      In React, almost everything is a component. This heavily componentized
+      In React, almost everything is a component. This heavily componentised
       approach makes it the perfect candidate to build complex layouts with a
       lot of tiny reusable pieces.
     </p>
@@ -52,7 +52,7 @@ export default () => (
     <p>
       One of the benefits of embracing React is also its very rich ecosystem of
       components and plugins. Many companies have implemented React in their
-      tech stack and open-source their components for broader use.
+      tech stack and open-sourced their components for broader use.
     </p>
 
     <p>
@@ -76,9 +76,10 @@ export default () => (
     </p>
 
     <p>
-      Now when it comes to know *what* to render, React does a “reconciliation”.
-      This is the process in which React compares two virtual DOM trees to
-      figure out what has changed and what needs to be refreshed. You can read{' '}
+      Now when it comes to know <em>what</em> to render, React does a
+      “reconciliation”. This is the process in which React compares two virtual
+      DOM trees to figure out what has changed and what needs to be refreshed.
+      You can read{' '}
       <a
         href="https://reactjs.org/docs/reconciliation.html"
         target="_blank"
@@ -101,8 +102,8 @@ export default () => (
       From there, we can get introduced to the{' '}
       <Link to="/SimpleProps">concept of “props”</Link>. We will go{' '}
       <Link to="/CompleteProps">further with props</Link> until we are
-      comfortable with them. Components configured with props being no different
-      than functions configured with parameters, we should be able to quickly
+      comfortable with them. Components configured with props are no different
+      than functions configured with parameters. We should be able to quickly
       move to the interesting bits!
     </p>
 
@@ -139,8 +140,7 @@ export default () => (
 
     <p>
       To avoid having components doing too many things, and to separate the
-      logic from the view, we use{' '}
-      <Link to="/ManipulatingData">“containers”</Link>. Containers are regular
+      logic from the view, we use “containers”. Containers are regular
       components dealing with the logic bits and the data transforming / sorting
       / filtering so the component underneath can focus on rendering the data
       and displaying it in a nice way.
