@@ -14,7 +14,7 @@ const Page = props => (
       <a
         href="https://reactjs.org/docs/react-component.html#the-component-lifecycle"
         target="_blank"
-        rel="nooper noreferrer"
+        rel="noopener noreferrer"
       >
         “lifecycle”
       </a>. In simple words, it goes from the moment React knows it will have to
