@@ -30,8 +30,10 @@ class Timer extends React.Component {
   render() {
     return (
       <p>
-        👋🏻 I have been rendered for {this.state.seconds}{' '}
-        {this.pluraliseSeconds()}.
+        <span role="img" aria-label="hand waving">
+          👋🏻
+        </span>{' '}
+        I have been rendered for {this.state.seconds} {this.pluraliseSeconds()}.
       </p>
     )
   }

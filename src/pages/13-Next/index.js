@@ -129,7 +129,12 @@ $ $(npm bin)/next`}</Code>
       enough so you don’t get bored too quickly.
     </p>
 
-    <p>Have fun! ✨</p>
+    <p>
+      Have fun!{' '}
+      <span role="img" aria-label="sparkles">
+        ✨
+      </span>
+    </p>
   </div>
 )
 

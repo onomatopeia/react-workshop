@@ -220,7 +220,12 @@ export default connect(mapStateToProps, mapDispatchToProps)(Counter)
 
     <SectionTitle text="Exercise G - For real?" />
 
-    <p>😱 YOU ALREADY DONE? Alright, help your neighbour then!</p>
+    <p>
+      <span role="img" aria-label="screaming face">
+        😱
+      </span>{' '}
+      YOU ALREADY DONE? Alright, help your neighbour then!
+    </p>
   </div>
 )
 

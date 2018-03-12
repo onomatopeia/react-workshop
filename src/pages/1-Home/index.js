@@ -18,7 +18,10 @@ export default () => (
 
     <p>
       <strong>
-        ✋ If you have any question at any moment, please be sure to ask! We are
+        <span role="img" aria-label="Hold on">
+          ✋
+        </span>{' '}
+        If you have any question at any moment, please be sure to ask! We are
         here to help.
       </strong>
     </p>

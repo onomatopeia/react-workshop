@@ -83,8 +83,11 @@ const Page = props => (
     </ul>
 
     <p>
-      ⭐️ If everything works, you should see messages above the form. And if
-      you feel like pushing things further, be sure to do so!
+      <span role="img" aria-label="star">
+        ⭐️
+      </span>{' '}
+      If everything works, you should see messages above the form. And if you
+      feel like pushing things further, be sure to do so!
     </p>
   </div>
 )

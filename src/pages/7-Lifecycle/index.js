@@ -19,8 +19,12 @@ const Page = props => (
         “lifecycle”
       </a>. In simple words, it goes from the moment React knows it will have to
       be rendered, going as far as the moment it gets “unrendered” if necessary.
-      There is an API in a set of hooks developers can use to react (😉) to
-      certain events of the component lifecycle.
+      There is an API in a set of hooks developers can use to react (<span
+        role="img"
+        aria-label="wink"
+      >
+        😉
+      </span>) to certain events of the component lifecycle.
     </p>
 
     <ul>
@@ -93,11 +97,7 @@ const Page = props => (
     <p>
       The code snippets in this small website (rendered with the{' '}
       <code>components/Code</code> component) are highlighted with{' '}
-      <a
-        href="http://prismjs.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a href="http://prismjs.com/" target="_blank" rel="noopener noreferrer">
         Prism.js
       </a>. When a <code>Code</code> component mounts, it uses the Prism API to
       highlight its content.

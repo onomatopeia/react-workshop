@@ -97,7 +97,7 @@ export default Button`}</Code>
         target="_blank"
         rel="noopener noreferrer"
       >
-        styled-components 💅
+        styled-components
       </a>{' '}
       and{' '}
       <a
@@ -141,10 +141,10 @@ export default Button`}</Code>
       <ButtonJSS>I’m a button styled with JSS</ButtonJSS>
     </Example>
 
-    <h3>styled-components 💅</h3>
+    <h3>styled-components</h3>
 
     <p>
-      styled-components 💅 is kind of the cool kid on the block when it comes to
+      styled-components is kind of the cool kid on the block when it comes to
       CSS-in-JS solutions. Its very own particularity is that it relies on
       tagged template literals to make it possible to author styles as plain
       text.
@@ -156,12 +156,12 @@ export default Button`}</Code>
     </p>
 
     <p>
-      Below is a button styled with styled-components 💅. You can find it in{' '}
+      Below is a button styled with styled-components. You can find it in{' '}
       <code>ButtonStyled/index.js</code>.
     </p>
 
     <Example live>
-      <ButtonStyled>I’m a button styled with styled-components 💅</ButtonStyled>
+      <ButtonStyled>I’m a button styled with styled-components</ButtonStyled>
     </Example>
 
     <h3>Fela</h3>
