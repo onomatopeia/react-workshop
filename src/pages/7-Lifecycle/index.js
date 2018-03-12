@@ -94,7 +94,7 @@ const Page = props => (
       The code snippets in this small website (rendered with the{' '}
       <code>components/Code</code> component) are highlighted with{' '}
       <a
-        href="https://reactjs.org/docs/typechecking-with-proptypes.html"
+        href="http://prismjs.com/"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -129,7 +129,7 @@ const Page = props => (
       You may notice this weird <code>ref</code> in the <code>render</code>{' '}
       method. A ref is a way to access the underlying actual DOM node for a
       component. In this case, we want to access the <code>code</code> node
-      element. We store it in a <code>code</code> property on the class
+      element. We store it in a <code>codeNode</code> property on the class
       instance. Later on, we use it in the <code>componentDidMount</code> method
       to highlight the code.
     </p>
