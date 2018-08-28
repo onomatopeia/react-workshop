@@ -38,20 +38,8 @@ export default HelloWorld`}</Code>
         rel="noopener noreferrer"
       >
         about JSX in React’s docs
-      </a>.
-    </p>
-
-    <p>
-      JSX is an abstraction on top of React internal API (namely{' '}
-      <code>React.createElement</code>) and while not mandatory at all, makes
-      authoring components much nicer. You can learn more{' '}
-      <a
-        href="https://reactjs.org/docs/jsx-in-depth.html"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        about JSX in React’s docs
-      </a>.
+      </a>
+      .
     </p>
 
     <Code language="jsx">
