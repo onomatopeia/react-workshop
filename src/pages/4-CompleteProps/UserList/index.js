@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import User from '../User'
 
 const UserList = props => (
@@ -15,10 +14,5 @@ const UserList = props => (
     ))}
   </ul>
 )
-
-// https://reactjs.org/docs/typechecking-with-proptypes.html
-UserList.propTypes = {
-  users: PropTypes.array.isRequired
-}
 
 export default UserList
