@@ -4,6 +4,7 @@ import { HashRouter } from 'react-router-dom'
 import Main from './components/Main'
 import App from './components/App'
 import Page from './components/Page'
+import ScrollToTop from './components/ScrollToTop'
 import './index.css'
 // Fela Setup
 // http://fela.js.org/docs/guides/UsageWithReact.html
@@ -20,7 +21,9 @@ ReactDOM.render(
     <Provider renderer={renderer} mountNode={mountNode}>
       <Main>
         <Page>
-          <App />
+          <ScrollToTop>
+            <App />
+          </ScrollToTop>
         </Page>
       </Main>
     </Provider>
