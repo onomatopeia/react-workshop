@@ -4,6 +4,7 @@ import PageTitle from '../../components/PageTitle'
 import SectionTitle from '../../components/SectionTitle'
 import Example from '../../components/Example'
 import Logger from './Logger'
+import lifecycle from './lifecycle.jpg'
 
 const Page = props => (
   <div>
@@ -17,14 +18,14 @@ const Page = props => (
         rel="noopener noreferrer"
       >
         “lifecycle”
-      </a>. In simple words, it goes from the moment React knows it will have to
-      be rendered, going as far as the moment it gets “unrendered” if necessary.
-      There is an API in a set of hooks developers can use to react (<span
-        role="img"
-        aria-label="wink"
-      >
+      </a>
+      . In simple words, it goes from the moment React knows it will have to be
+      rendered, going as far as the moment it gets “unrendered” if necessary.
+      There is an API in a set of hooks developers can use to react (
+      <span role="img" aria-label="wink">
         😉
-      </span>) to certain events of the component lifecycle.
+      </span>
+      ) to certain events of the component lifecycle. Here are the main ones:
     </p>
 
     <ul>
@@ -35,29 +36,15 @@ const Page = props => (
             <code>constructor</code>
           </li>
           <li>
-            <code>componentWillMount</code> (deprecated in React 17)
-          </li>
-          <li>
-            <code>render</code>
-          </li>
-          <li>
             <code>componentDidMount</code>
           </li>
         </ul>
       </li>
       <li>
-        Updating<ul>
-          <li>
-            <code>componentWillReceiveProps</code> (deprecated in React 17)
-          </li>
+        Updating
+        <ul>
           <li>
             <code>shouldComponentUpdate</code>
-          </li>
-          <li>
-            <code>componentWillUpdate</code> (deprecated in React 17)
-          </li>
-          <li>
-            <code>render</code>
           </li>
           <li>
             <code>componentDidUpdate</code>
@@ -65,20 +52,24 @@ const Page = props => (
         </ul>
       </li>
       <li>
-        Unmounting<ul>
+        Unmounting
+        <ul>
           <li>
             <code>componentWillUnmount</code>
           </li>
         </ul>
       </li>
       <li>
-        Error handling<ul>
+        Error handling
+        <ul>
           <li>
             <code>componentDidCatch</code>
           </li>
         </ul>
       </li>
     </ul>
+
+    <img src={lifecycle} alt="Illustration of the React lifeyccle" />
 
     <SectionTitle text="Mounting" />
 
@@ -99,7 +90,8 @@ const Page = props => (
       <code>components/Code</code> component) are highlighted with{' '}
       <a href="http://prismjs.com/" target="_blank" rel="noopener noreferrer">
         Prism.js
-      </a>. When a <code>Code</code> component mounts, it uses the Prism API to
+      </a>
+      . When a <code>Code</code> component mounts, it uses the Prism API to
       highlight its content.
     </p>
 
