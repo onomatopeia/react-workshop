@@ -28,40 +28,6 @@ const Page = props => (
       <UserIndex />
     </Example>
 
-    <SectionTitle text="Props validation" />
-
-    <p>
-      In components <code>User</code> and <code>UserList</code>, you might see
-      that we are performing some sort of props validation. This helps us make
-      sure our components receive the correct props and to ensure their presence
-      if they are required. Also note that this is stripped entirely when
-      running React in production mode.
-    </p>
-
-    <Code language="js">{`import PropTypes from 'prop-types'
-
-User.propTypes = {
-  name: PropTypes.string.isRequired,
-  email: PropTypes.string.isRequired,
-  preferredName: PropTypes.string
-}`}</Code>
-
-    <p>
-      Of course this is not mandatory and tends more and more to be replaced by
-      something like{' '}
-      <a href="https://flow.org/" target="_blank" rel="noopener noreferrer">
-        Flow
-      </a>{' '}
-      or{' '}
-      <a
-        href="http://www.typescriptlang.org/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        TypeScript
-      </a>.
-    </p>
-
     <SectionTitle text="Exercise A - Add yourself to the user list" />
 
     <p>
