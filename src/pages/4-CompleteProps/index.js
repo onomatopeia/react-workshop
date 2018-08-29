@@ -36,7 +36,7 @@ const Page = props => (
     </p>
 
     <Example live>
-      <UserIndex />
+      <UserIndex users={[{ name: 'Agata', email: 'agata@whatever.com' }]}/>
     </Example>
 
     <SectionTitle text="Exercise B - Add another prop to users" />
@@ -48,7 +48,7 @@ const Page = props => (
     </p>
 
     <Example live>
-      <UserIndex />
+      <UserIndex users={[{ name: 'Agata', email: 'agata@whatever.com', nationality: 'dinosaur' }]}/>
     </Example>
   </div>
 )

@@ -8,8 +8,10 @@ const UserList = props => (
       // To know more about React keys:
       // https://reactjs.org/docs/lists-and-keys.html
       // https://reactjs.org/docs/reconciliation.html#keys
+      
+      // ...user = this is spreading the user object 
       <li key={user.email}>
-        <User {...user} />
+        <User {...user} /> 
       </li>
     ))}
   </ul>

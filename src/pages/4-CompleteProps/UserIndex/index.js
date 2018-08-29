@@ -11,11 +11,13 @@ const users = [
   { name: 'Hugo', email: 'hugo.giraudel@n26.com' }
 ]
 
-const UserIndex = () => (
-  <div>
+const UserIndex = props => {
+  const users2 = [...users, ...(props.users || [])]
+  return <div>
     <h2>Users:</h2>
-    <UserList users={users} />
+    <UserList users={users2} />
   </div>
-)
+}
+
 
 export default UserIndex

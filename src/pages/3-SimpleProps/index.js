@@ -46,7 +46,7 @@ export default Title`}</Code>
     </p>
 
     <Example live>
-      <Title text="Update me, I’m famous" />
+      <Title text="OMG" />
     </Example>
 
     <SectionTitle text="Exercise B - Add id attribute (medium)" />
@@ -57,7 +57,7 @@ export default Title`}</Code>
     </p>
 
     <Example live>
-      <Title text="I want an id!" />
+      <Title id="omg_title" text="I want an id!" />
     </Example>
 
     <SectionTitle text="Exercise C - Change heading level (hard)" />
@@ -69,7 +69,7 @@ export default Title`}</Code>
     </p>
 
     <Example live>
-      <Title text="How about a H2?" />
+      <Title level={2} text="How about a H2?" />
     </Example>
 
     <p>

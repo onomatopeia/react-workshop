@@ -1,7 +1,10 @@
 import React from 'react'
 
 const Title = props => {
-  return <h1>{props.text}</h1>
+  // Two alternative implementations of if-else
+  //const Level =  props.level ? "h" + props.level : "h1"
+  const Level = "h" + props.level || "h1"
+  return <Level id={props.id}>{props.text}123</Level>
 }
 
 export default Title
