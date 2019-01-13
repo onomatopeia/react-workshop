@@ -1,6 +1,14 @@
 import React from 'react'
 
 class Logger extends React.Component {
+  
+  componentDidMount () {
+    console.log('Something')
+    /*if (window.Prism) {
+      window.Prism.highlightElement(this.codeNode)
+    }*/
+  }
+
   render() {
     return (
       <p>

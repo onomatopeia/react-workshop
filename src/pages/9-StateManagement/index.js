@@ -162,7 +162,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(Counter)
     </p>
 
     <Example live>
-      <CounterPlain />
+      <CounterPlain delta={2} />
     </Example>
 
     <SectionTitle text="Exercise B - Increment by 2 with Redux (easy)" />
@@ -172,7 +172,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(Counter)
     </p>
 
     <Example live>
-      <CounterRedux />
+      <CounterRedux delta={2} />
     </Example>
 
     <SectionTitle text="Exercise C - Add by-10 option (medium)" />
@@ -185,7 +185,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(Counter)
     </p>
 
     <Example live>
-      <CounterRedux />
+      <CounterRedux deltas={[1,10]}/>
     </Example>
 
     <SectionTitle text="Exercise D - Cap min and max values (medium)" />

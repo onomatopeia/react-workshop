@@ -6,6 +6,7 @@ class HelloYou extends React.Component {
   state = {}
 
   handleChange = event => {
+    this.setState({name: event.target.value})
     // @TODO: save the input value (`event.target.value`) into the state
   }
 
@@ -15,8 +16,8 @@ class HelloYou extends React.Component {
         <div>
           <label htmlFor="hello-you">What’s your name?</label>
         </div>
-        <input type="text" id="hello-you" />
-        <p>Replace me with “Hello &lt;input value&gt;”.</p>
+        <input type="text" id="hello-you" onChange={this.handleChange}/>
+        <p>Hello {(this.state.name || 'World')}.</p>
       </div>
     )
   }

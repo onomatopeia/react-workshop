@@ -83,6 +83,7 @@ const Page = () => (
     </p>
 
     <Example live>
+      <Timer />
       <Timer seconds={42} />
     </Example>
 

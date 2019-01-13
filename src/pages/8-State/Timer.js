@@ -5,11 +5,12 @@ class Timer extends React.Component {
     super(props)
 
     this.state = {
-      seconds: 0
+      seconds: (props.seconds || 0)
     }
+    // setState would trigger render, so one shouldn't (even if can) use this method in a constructor
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.timer = setInterval(this.increment, 1000)
   }
 
@@ -18,9 +19,14 @@ class Timer extends React.Component {
   }
 
   increment = () => {
-    this.setState({
+    /*this.setState({
       seconds: this.state.seconds + 1
-    })
+    })*/
+
+    //below is an alternative implementation that is also correct (there was a discussion which is better, but I didn't get it)
+    this.setState(prevState => ({
+      seconds: prevState.seconds + 1
+    }))
   }
 
   pluraliseSeconds = () => {
